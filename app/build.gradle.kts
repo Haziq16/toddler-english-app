@@ -44,6 +44,15 @@ android {
             }
         }
     }
+    buildTypes {
+        // Release code (R8, not debuggable) signed with the debug key, for performance checks on a device.
+        create("benchmark") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17

@@ -20,6 +20,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import app.toddlerenglish.ui.theme.Dimens
 import app.toddlerenglish.ui.theme.Palette
 
@@ -45,6 +47,8 @@ fun Modifier.bouncyClickable(label: String, enabled: Boolean = true, onClick: ()
             role = Role.Button,
             onClick = onClick,
         )
+        // One clear spoken label for TalkBack; child text (tile titles) is not read twice.
+        .clearAndSetSemantics { contentDescription = label }
 }
 
 /** Resolves a drawable by its content name, so art is swappable by file name (D-014). */

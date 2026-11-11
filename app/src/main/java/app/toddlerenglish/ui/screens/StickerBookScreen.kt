@@ -16,8 +16,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import app.toddlerenglish.audio.WordAudio
 import app.toddlerenglish.content.Content
@@ -56,11 +54,10 @@ fun StickerBookScreen(content: Content, progress: Progress, audio: WordAudio, ma
                             word?.image ?: "",
                             100.dp,
                             Modifier
-                                .bouncyClickable(word?.text ?: "sticker") {
+                                .bouncyClickable("${word?.text ?: ""} sticker") {
                                     word?.let { audio.play(it.audio) }
                                     mascot.celebrate()
-                                }
-                                .semantics { contentDescription = "${word?.text} sticker" },
+                                },
                         )
                     }
                 }

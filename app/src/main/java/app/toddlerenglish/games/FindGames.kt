@@ -31,8 +31,6 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.testTag
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import app.toddlerenglish.content.Game
@@ -73,7 +71,6 @@ fun ChoiceCard(word: Word, size: Dp, pulse: Int, wiggle: Int, glow: Boolean, onT
             }
             .background(if (glow) Palette.Sun else Palette.Paper, RoundedCornerShape(Dimens.Corner))
             .bouncyClickable(word.text, onClick = onTap)
-            .semantics { contentDescription = word.text }
             .testTag("choice_${word.id}")
             .padding(size * 0.1f),
     ) {

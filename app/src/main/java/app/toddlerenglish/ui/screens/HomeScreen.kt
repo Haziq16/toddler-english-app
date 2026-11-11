@@ -27,7 +27,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import app.toddlerenglish.audio.WordAudio
 import app.toddlerenglish.content.Content
@@ -93,7 +92,7 @@ fun HomeScreen(
             }
             val scenes = content.scenes
             LazyVerticalGrid(
-                columns = GridCells.Adaptive(minSize = 150.dp),
+                columns = GridCells.Adaptive(minSize = 170.dp),
                 contentPadding = PaddingValues(Dimens.SpaceM),
                 horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
                 verticalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
@@ -130,7 +129,6 @@ private fun Tile(title: String, icon: String, tint: Color, onClick: () -> Unit) 
             .fillMaxWidth()
             .background(tint, RoundedCornerShape(Dimens.Corner))
             .bouncyClickable(title, onClick = onClick)
-            .semantics { contentDescription = title }
             .padding(Dimens.SpaceM),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {

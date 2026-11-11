@@ -95,3 +95,18 @@ Build, 37 unit tests, lint, ktlint pass. All five scenes checked on the emulator
 **Decisions:** D-024, D-025 (proposed).
 **Open:** songs are spoken chants, not sung (D-024). Tablet layout still unchecked (S7).
 **Next up:** start S7: run the TalkBack/contrast/touch-target audit and write `docs/COMPLIANCE.md`.
+
+## 2026-11-12 16:30, Claude Code (Claude Opus 5.5), S7
+**Done:** single TalkBack label per button (`bouncyClickable`), clickable gate keys, device audit test for labels
+and 64dp targets on every child screen, contrast unit test (parent controls darkened to `Palette.Forest`),
+airplane-mode run, tablet landscape check, home tiles a little larger, per-frame work moved out of composition,
+`benchmark` build type, docs/COMPLIANCE.md, privacy policy and GitHub Pages config.
+**Files:** ui/components/{Common,Mascot,Pebble}.kt, games/BubblesScreen.kt, parent/ParentalGateScreen.kt,
+ui/theme/*, androidTest/ChildScreensAuditTest.kt, test/.../ContrastTest.kt, app/build.gradle.kts,
+docs/{COMPLIANCE,privacy-policy,index}.md, docs/_config.yml
+**State:** build, unit tests, lint, ktlint, strict validation pass; `connectedDebugAndroidTest` 4/4 on the
+Pixel 8 Pro emulator (API 35). Release (R8) APK 3.5 MB.
+**Decisions:** D-026, D-027 (proposed).
+**Open:** privacy policy placeholders (developer name, contact email); voice licence (D-013); real low-end
+device run. GitHub Actions runs since S2 stayed queued on GitHub's side; S0 and S1 passed.
+**Next up:** start S8: write docs/RELEASE.md (signed AAB steps).

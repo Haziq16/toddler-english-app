@@ -58,19 +58,22 @@ fun rememberMascotState(initial: Mood = Mood.Idle) = remember { MascotState(init
 @Composable
 fun Mascot(state: MascotState, modifier: Modifier = Modifier) {
     val infinite = rememberInfiniteTransition(label = "pebble")
-    val bob by infinite.animateFloat(
+    val bob = infinite.animateFloat(
         initialValue = 0f,
         targetValue = 1f,
         animationSpec = infiniteRepeatable(tween(Motion.IDLE_BOB_MS, easing = FastOutSlowInEasing), RepeatMode.Reverse),
         label = "bob",
     )
-    val blinkCycle by infinite.animateFloat(
+    val blinkCycle = infinite.animateFloat(
         initialValue = 0f,
         targetValue = 1f,
         animationSpec = infiniteRepeatable(tween(3_600, easing = LinearEasing)),
         label = "blink",
     )
-    val blink = if (blinkCycle > 0.95f) 1f - kotlin.math.abs(blinkCycle - 0.975f) / 0.025f else 0f
+    fun blink(): Float {
+        val c = blinkCycle.value
+        return if (c > 0.95f) 1f - kotlin.math.abs(c - 0.975f) / 0.025f else 0f
+    }
 
     val hop = remember { Animatable(0f) }
     val wing = remember { Animatable(0f) }
@@ -100,10 +103,11 @@ fun Mascot(state: MascotState, modifier: Modifier = Modifier) {
         }
     }
 
-    val breathe = if (state.mood == Mood.Sleep) 0.02f * bob else 0f
+    val sleeping = state.mood == Mood.Sleep
     Box(
         modifier.graphicsLayer {
-            translationY = (hop.value * 0.25f + (if (state.mood == Mood.Sleep) 0f else bob * 0.03f)) * size.height
+            val breathe = if (sleeping) 0.02f * bob.value else 0f
+            translationY = (hop.value * 0.25f + (if (sleeping) 0f else bob.value * 0.03f)) * size.height
             rotationZ = tilt.value
             scaleX = 1f + breathe
             scaleY = 1f + breathe
@@ -112,9 +116,9 @@ fun Mascot(state: MascotState, modifier: Modifier = Modifier) {
         PebbleDrawing(
             modifier = Modifier.matchParentSize(),
             mood = state.mood,
-            blink = if (state.mood == Mood.Idle) blink else 0f,
-            wing = wing.value,
-            lean = tilt.value * 2f + (bob - 0.5f) * 8f,
+            blink = { if (state.mood == Mood.Idle) blink() else 0f },
+            wing = { wing.value },
+            lean = { tilt.value * 2f + (bob.value - 0.5f) * 8f },
         )
     }
 }

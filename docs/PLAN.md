@@ -11,7 +11,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S4 Mascot and rewards | done |
 | S5 Mini-games and parent corner | done |
 | S6 Remaining scenes and songs | done |
-| S7 Polish and compliance | todo |
+| S7 Polish and compliance | done |
 | S8 Release prep | todo |
 
 ## S0 Foundations

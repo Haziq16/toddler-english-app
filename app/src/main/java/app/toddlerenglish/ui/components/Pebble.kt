@@ -25,13 +25,20 @@ enum class Mood { Idle, Celebrate, Encourage, Sleep }
  * @param lean  degrees the leaf sprout leans
  */
 @Composable
-fun PebbleDrawing(modifier: Modifier = Modifier, mood: Mood = Mood.Idle, blink: Float = 0f, wing: Float = 0f, lean: Float = 0f) {
+fun PebbleDrawing(
+    modifier: Modifier = Modifier,
+    mood: Mood = Mood.Idle,
+    blink: () -> Float = { 0f },
+    wing: () -> Float = { 0f },
+    lean: () -> Float = { 0f },
+) {
+    // The lambdas are read inside the draw block, so animation only redraws and never recomposes.
     Canvas(modifier) {
         val s = size.minDimension / 100f
         val ox = (size.width - 100f * s) / 2f
         val oy = (size.height - 100f * s) / 2f
         fun p(x: Float, y: Float) = Offset(ox + x * s, oy + y * s)
-        drawPebble(::p, s, mood, blink, wing, lean)
+        drawPebble(::p, s, mood, blink(), wing(), lean())
     }
 }
 

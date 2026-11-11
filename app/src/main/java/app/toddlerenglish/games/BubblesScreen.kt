@@ -29,8 +29,6 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.testTag
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import app.toddlerenglish.content.Game
@@ -91,20 +89,27 @@ fun BubblesScreen(env: GameEnv, game: Game) {
                 else -> 115.dp
             }
             val sizePx = with(density) { sizeDp.toPx() }
+
+            // Positions are read in the layout phase only, so moving bubbles never recompose.
+            fun centre(b: Bubble): Offset {
+                val p = ((now - b.bornAt).toFloat() / b.riseMs).coerceIn(0f, 1f)
+                val cx = (b.x * w + sin(p * 9f + b.wobble) * sizePx * 0.15f).coerceIn(sizePx / 2, w - sizePx / 2)
+                return Offset(cx, h + sizePx / 2 - p * (h + sizePx))
+            }
             bubbles.forEach { b ->
                 key(b.id) {
-                    val p = ((now - b.bornAt).toFloat() / b.riseMs).coerceIn(0f, 1f)
-                    val cx = (b.x * w + sin(p * 9f + b.wobble) * sizePx * 0.15f).coerceIn(sizePx / 2, w - sizePx / 2)
-                    val cy = h + sizePx / 2 - p * (h + sizePx)
                     Box(
                         Modifier
-                            .offset { IntOffset((cx - sizePx / 2).roundToInt(), (cy - sizePx / 2).roundToInt()) }
+                            .offset {
+                                val c = centre(b)
+                                IntOffset((c.x - sizePx / 2).roundToInt(), (c.y - sizePx / 2).roundToInt())
+                            }
                             .size(sizeDp)
                             .background(Palette.BubbleFill, CircleShape)
                             .border(3.dp, Palette.BubbleEdge, CircleShape)
                             .bouncyClickable("Pop ${b.word.text}") {
                                 bubbles.remove(b)
-                                bursts += b.id to Offset(cx, cy)
+                                bursts += b.id to centre(b)
                                 env.audio.play(b.word.audio)
                                 popped = b.id to b.word
                                 if (round.pop()) {
@@ -115,7 +120,6 @@ fun BubblesScreen(env: GameEnv, game: Game) {
                                     env.mascot.celebrate()
                                 }
                             }
-                            .semantics { contentDescription = b.word.text }
                             .padding(sizeDp * 0.18f),
                     ) {
                         ContentImage(b.word.image, null, Modifier.fillMaxSize())

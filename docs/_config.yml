@@ -1,0 +1,3 @@
+title: Toddler English
+include: [privacy-policy.md, index.md]
+exclude: [LOG.md, PLAN.md, DECISIONS.md, ARCHITECTURE.md, CONTENT.md, MASCOT.md, CREDITS.md, COMPLIANCE.md, RELEASE.md, STORE_LISTING.md, TESTER_GUIDE.md]

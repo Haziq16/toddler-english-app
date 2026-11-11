@@ -134,3 +134,13 @@ singer can replace any `audio/songs/<id>.ogg` later, keeping or re-measuring the
 ## D-025 Scene item halos (proposed)
 Every scene item sits on a soft white halo (`Palette.SceneHalo`). It keeps green things visible on grass and
 tan things on wooden floors, and makes it obvious that each item can be tapped.
+
+## D-026 Performance approach (proposed)
+Anything that changes every frame (bubble positions, Pebble's bob, blink and wings) is read in the layout or draw
+phase, never during composition, so animation does not recompose. A `benchmark` build type (release code with R8,
+signed with the debug key, not debuggable) exists only for measuring on a device; it is never uploaded.
+
+## D-027 Privacy policy hosting (proposed)
+GitHub Pages serves `docs/` from `main`; `_config.yml` publishes only `index.md` and `privacy-policy.md`.
+Policy URL: https://haziq16.github.io/toddler-english-app/privacy-policy. The developer name and contact
+email are placeholders until the owner fills them in.

@@ -20,6 +20,9 @@ object Palette {
     val InkSoft = Color(0xFF4F5D63)
 
     val Leaf = Color(0xFF8CC84B)
+
+    /** Controls in the parent area (switches, radio buttons): strong enough for 3:1 against white. */
+    val Forest = Color(0xFF2F7D63)
     val Sun = Color(0xFFFFD166)
     val Sky = Color(0xFF9ED8F0)
     val Coral = Color(0xFFF4A259)

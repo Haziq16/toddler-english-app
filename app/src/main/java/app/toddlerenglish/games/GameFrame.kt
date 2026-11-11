@@ -23,8 +23,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import app.toddlerenglish.audio.WordAudio
 import app.toddlerenglish.content.Content
@@ -99,7 +97,6 @@ fun GamesMenuScreen(env: GameEnv, onGame: (Game) -> Unit) {
                             env.say(game.phrase)
                             onGame(game)
                         }
-                        .semantics { contentDescription = game.title }
                         .padding(Dimens.SpaceM),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {

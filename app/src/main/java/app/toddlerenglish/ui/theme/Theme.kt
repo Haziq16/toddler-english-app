@@ -5,8 +5,8 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 
 private val LightColors = lightColorScheme(
-    primary = Palette.Leaf,
-    onPrimary = Palette.Ink,
+    primary = Palette.Forest,
+    onPrimary = Palette.Paper,
     secondary = Palette.Sun,
     onSecondary = Palette.Ink,
     tertiary = Palette.Sky,

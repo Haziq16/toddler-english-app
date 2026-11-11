@@ -5,6 +5,7 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -160,7 +161,7 @@ private fun Keypad(onDigit: (Int) -> Unit) {
                             .background(Palette.Paper, RoundedCornerShape(Dimens.CornerSmall))
                             .border(1.dp, Palette.InkSoft.copy(alpha = 0.2f), RoundedCornerShape(Dimens.CornerSmall))
                             .testTag("gate_key_$d")
-                            .pointerInput(d) { detectTapGestures { onDigit(d) } }
+                            .clickable(onClickLabel = "Type $d") { onDigit(d) }
                             .semantics { contentDescription = "$d" },
                         contentAlignment = Alignment.Center,
                     ) {
