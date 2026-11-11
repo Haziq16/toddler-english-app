@@ -219,7 +219,16 @@ def main():
             songs_path.write_text(json.dumps(songs_doc, indent=2) + "\n", encoding="utf-8")
 
     CACHE_FILE.write_text(json.dumps(dict(sorted(cache.items())), indent=1) + "\n", encoding="utf-8")
+    write_index()
     print("done")
+
+
+def write_index():
+    """assets/audio/index.json: duration in ms of every clip, so the app can play clips back to back."""
+    index = {}
+    for f in sorted((ASSETS / "audio").rglob("*.ogg")):
+        index[f.relative_to(ASSETS).as_posix()] = int(round(sf.info(str(f)).duration * 1000))
+    (ASSETS / "audio/index.json").write_text(json.dumps(index, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

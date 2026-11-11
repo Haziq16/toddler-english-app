@@ -82,3 +82,17 @@ Canvas so it animates without image assets.
 100 words, 20 per scene: home, farm, food, bedtime, outdoors. Tier 1 = short concrete first words
 (35 words), tier 2 = common next words (39), tier 3 = longer or more abstract words (26), for example
 "butterfly", "quiet", "dream". Every scene has at least 6 tier-1 words so tier-1 games have enough choice.
+
+## D-017 Parental gate (proposed)
+Two steps: press and hold a circle for 3 seconds, then type the answer to an addition written in words
+("sixteen plus nine") on a 0-9 keypad. Answers are always two digits. A wrong answer silently returns to step 1
+with a new question. Children aged 1-5 cannot read the words. `ParentalGateTest` simulates 20,000 random toddler
+sessions (taps, some long presses, random keys) and requires fewer than 1% to open the gate.
+
+## D-018 Back button (proposed)
+Back on the home screen is consumed (Pebble does a little nod), so a toddler cannot leave by accident. Back in
+any other child screen returns home. Grown-ups leave via "Close the app" in the parent corner. Home and Recents
+buttons cannot be blocked without screen pinning, which is left to parents (documented in the tester guide).
+
+## D-019 Defaults (proposed)
+Default word tier 1, play-time limit 10 minutes, sound on. All three are parent settings in DataStore.

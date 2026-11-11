@@ -26,3 +26,17 @@ docs/CONTENT.md, docs/MASCOT.md, docs/CREDITS.md
 **Decisions:** D-012 to D-016 (proposed). D-013 flags that the Windows voice may not be redistributable.
 **Open:** voice licence (D-013). Art checked by eye in the preview only, not yet on a device.
 **Next up:** start S2: write `audio/AudioService.kt` (SoundPool for words and phrases) and the navigation shell.
+
+## 2026-11-12 11:20, Claude Code (Claude Opus 5.5), S2
+**Done:** app container, AudioService (SoundPool, sequences with durations from `assets/audio/index.json`),
+SettingsRepository (DataStore), parental gate logic + screen, parent corner stub (sound switch, close app),
+home screen with five big scene tiles and animated Pebble, navigation, Back handling, scene stand-in grid.
+**Files:** AppContainer.kt, audio/*, data/SettingsRepository.kt, parent/*, ui/AppNavHost.kt,
+ui/screens/HomeScreen.kt, ui/screens/SceneScreen.kt, ui/components/{Common,Mascot,ParentButton}.kt
+**State:** build, unit tests (incl. random-tap gate test), lint and ktlint pass. Checked on the Pixel 8 Pro
+emulator (API 35): home renders, Back x3 stays in the app, 3 s hold shows the question, right answer opens the
+parent corner, SoundPool playback events logged for greeting, gate phrase, scene name and a word. The app holds
+no network permission (checked with dumpsys).
+**Decisions:** D-017 to D-019 (proposed).
+**Open:** airplane-mode run is planned for S7 (network cannot be used anyway without the permission).
+**Next up:** start S3: write `ui/scene/SceneLayoutEngine.kt` (placements + auto-slots) and `assets/content/scenes/farm.json`.

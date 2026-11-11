@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Grown-ups button: a small padlock. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:strokeColor="#FF7D8A90" android:strokeWidth="2.2" android:strokeLineCap="round" android:pathData="M8,11 L8,8 A4,4 0 0,1 16,8 L16,11" />
+    <path android:fillColor="#FF7D8A90" android:pathData="M6,11 h12 a1.5,1.5 0 0,1 1.5,1.5 v7 a1.5,1.5 0 0,1 -1.5,1.5 h-12 a1.5,1.5 0 0,1 -1.5,-1.5 v-7 a1.5,1.5 0 0,1 1.5,-1.5 Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M12,14.5 a1.6,1.6 0 1,0 0.01,0 Z M11.3,16 h1.4 v2.6 h-1.4 Z" />
+</vector>

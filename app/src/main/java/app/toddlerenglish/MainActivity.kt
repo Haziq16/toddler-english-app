@@ -4,23 +4,23 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
+import app.toddlerenglish.ui.AppNavHost
 import app.toddlerenglish.ui.theme.ToddlerEnglishTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        val container = (application as ToddlerApplication).container
         setContent {
             ToddlerEnglishTheme {
-                Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("Toddler English")
-                }
+                AppNavHost(container)
             }
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        (application as ToddlerApplication).container.audio.stop()
     }
 }

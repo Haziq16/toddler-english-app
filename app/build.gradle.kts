@@ -60,6 +60,9 @@ android {
         checkDependencies = false
         disable += setOf("GradleDependency", "NewerVersionAvailable", "AndroidGradlePluginVersion", "OldTargetApi")
     }
+    androidResources {
+        noCompress += "ogg"
+    }
     packaging {
         resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}", "DebugProbesKt.bin")
     }
