@@ -203,7 +203,9 @@ private fun SceneItem(item: PlacedWord, pulse: Int, modifier: Modifier) {
             // soft glow behind the highlighted item
             Box(Modifier.fillMaxSize().graphicsLayer { alpha = (scale.value - 1f) * 2.5f }.background(Palette.Sun, CircleShape))
         }
-        ContentImage(item.word.image, contentDescription = null, modifier = Modifier.fillMaxSize())
+        // A soft halo keeps every item visible on any background (green frog on green grass).
+        Box(Modifier.fillMaxSize().background(Palette.SceneHalo, CircleShape))
+        ContentImage(item.word.image, contentDescription = null, modifier = Modifier.fillMaxSize().padding(item.haloPadding()))
     }
 }
 
@@ -245,3 +247,6 @@ fun HomeButton(onHome: () -> Unit, modifier: Modifier = Modifier) {
         Image(painterResource(R.drawable.ic_home), contentDescription = "Home", modifier = Modifier.size(36.dp))
     }
 }
+
+/** Inset so the art sits inside its halo. */
+private fun PlacedWord.haloPadding() = 6.dp

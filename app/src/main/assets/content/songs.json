@@ -245,6 +245,1815 @@
           "endMs": 20000
         }
       ]
+    },
+    {
+      "id": "yummy_food",
+      "title": "Yummy Food",
+      "icon": "apple",
+      "audio": "audio/songs/yummy_food.ogg",
+      "bpm": 96,
+      "melody": [
+        "G",
+        "E",
+        "C",
+        "E",
+        "G",
+        "A",
+        "G",
+        "E"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "like"
+            },
+            {
+              "text": "apple",
+              "word": "apple"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Yum"
+            },
+            {
+              "text": "yum"
+            },
+            {
+              "text": "yum"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "like"
+            },
+            {
+              "text": "banana",
+              "word": "banana"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Yum"
+            },
+            {
+              "text": "yum"
+            },
+            {
+              "text": "yum"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "like"
+            },
+            {
+              "text": "bread",
+              "word": "bread"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Yum"
+            },
+            {
+              "text": "yum"
+            },
+            {
+              "text": "yum"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "like"
+            },
+            {
+              "text": "milk",
+              "word": "milk"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Yum"
+            },
+            {
+              "text": "yum"
+            },
+            {
+              "text": "yum"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "I"
+            },
+            {
+              "text": "like"
+            },
+            {
+              "text": "cake",
+              "word": "cake"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Yum"
+            },
+            {
+              "text": "yum"
+            },
+            {
+              "text": "yum"
+            }
+          ],
+          "restBeats": 2
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1250,
+          "endMs": 1875
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 1875,
+          "endMs": 2500
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 2500,
+          "endMs": 3125
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 3750,
+          "endMs": 4375
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 4375,
+          "endMs": 5000
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 5000,
+          "endMs": 5625
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 6875,
+          "endMs": 7500
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 7500,
+          "endMs": 8125
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 8125,
+          "endMs": 8750
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 9375,
+          "endMs": 10000
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 10000,
+          "endMs": 10625
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 10625,
+          "endMs": 11250
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 12500,
+          "endMs": 13125
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 13125,
+          "endMs": 13750
+        },
+        {
+          "line": 4,
+          "token": 2,
+          "startMs": 13750,
+          "endMs": 14375
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 15000,
+          "endMs": 15625
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 15625,
+          "endMs": 16250
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 16250,
+          "endMs": 16875
+        },
+        {
+          "line": 6,
+          "token": 0,
+          "startMs": 18125,
+          "endMs": 18750
+        },
+        {
+          "line": 6,
+          "token": 1,
+          "startMs": 18750,
+          "endMs": 19375
+        },
+        {
+          "line": 6,
+          "token": 2,
+          "startMs": 19375,
+          "endMs": 20000
+        },
+        {
+          "line": 7,
+          "token": 0,
+          "startMs": 20625,
+          "endMs": 21250
+        },
+        {
+          "line": 7,
+          "token": 1,
+          "startMs": 21250,
+          "endMs": 21875
+        },
+        {
+          "line": 7,
+          "token": 2,
+          "startMs": 21875,
+          "endMs": 22500
+        },
+        {
+          "line": 8,
+          "token": 0,
+          "startMs": 23750,
+          "endMs": 24375
+        },
+        {
+          "line": 8,
+          "token": 1,
+          "startMs": 24375,
+          "endMs": 25000
+        },
+        {
+          "line": 8,
+          "token": 2,
+          "startMs": 25000,
+          "endMs": 25625
+        },
+        {
+          "line": 9,
+          "token": 0,
+          "startMs": 26250,
+          "endMs": 26875
+        },
+        {
+          "line": 9,
+          "token": 1,
+          "startMs": 26875,
+          "endMs": 27500
+        },
+        {
+          "line": 9,
+          "token": 2,
+          "startMs": 27500,
+          "endMs": 28125
+        }
+      ]
+    },
+    {
+      "id": "good_night",
+      "title": "Good Night",
+      "icon": "moon",
+      "audio": "audio/songs/good_night.ogg",
+      "bpm": 80,
+      "melody": [
+        "E",
+        "D",
+        "C",
+        "D",
+        "E",
+        "E",
+        "E",
+        "D"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "Good"
+            },
+            {
+              "text": "night"
+            },
+            {
+              "text": "moon",
+              "word": "moon"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Good"
+            },
+            {
+              "text": "night"
+            },
+            {
+              "text": "star",
+              "word": "star"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Good"
+            },
+            {
+              "text": "night"
+            },
+            {
+              "text": "teddy",
+              "word": "teddy"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "hug",
+              "word": "hug"
+            },
+            {
+              "text": "hug",
+              "word": "hug"
+            },
+            {
+              "text": "hug",
+              "word": "hug"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Into"
+            },
+            {
+              "text": "bed",
+              "word": "bed"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "sleep",
+              "word": "sleep"
+            },
+            {
+              "text": "sleep",
+              "word": "sleep"
+            },
+            {
+              "text": "sleep",
+              "word": "sleep"
+            }
+          ],
+          "restBeats": 3
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1500,
+          "endMs": 2250
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 2250,
+          "endMs": 3000
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 3000,
+          "endMs": 3750
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 5250,
+          "endMs": 6000
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 6000,
+          "endMs": 6750
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 6750,
+          "endMs": 7500
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 9000,
+          "endMs": 9750
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 9750,
+          "endMs": 10500
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 10500,
+          "endMs": 11250
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 12750,
+          "endMs": 13500
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 13500,
+          "endMs": 14250
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 14250,
+          "endMs": 15000
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 16500,
+          "endMs": 17250
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 17250,
+          "endMs": 18000
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 19500,
+          "endMs": 20250
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 20250,
+          "endMs": 21000
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 21000,
+          "endMs": 21750
+        }
+      ]
+    },
+    {
+      "id": "look_outside",
+      "title": "Look Outside",
+      "icon": "sun",
+      "audio": "audio/songs/look_outside.ogg",
+      "bpm": 100,
+      "melody": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "E",
+        "D",
+        "C",
+        "G"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "bird",
+              "word": "bird"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Tweet"
+            },
+            {
+              "text": "tweet"
+            },
+            {
+              "text": "tweet"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "car",
+              "word": "car"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Beep"
+            },
+            {
+              "text": "beep"
+            },
+            {
+              "text": "beep"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "bus",
+              "word": "bus"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Beep"
+            },
+            {
+              "text": "beep"
+            },
+            {
+              "text": "beep"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "bee",
+              "word": "bee"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Buzz"
+            },
+            {
+              "text": "buzz"
+            },
+            {
+              "text": "buzz"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "fish",
+              "word": "fish"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Splash"
+            },
+            {
+              "text": "splash"
+            },
+            {
+              "text": "splash"
+            }
+          ],
+          "restBeats": 2
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1200,
+          "endMs": 1799
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 1799,
+          "endMs": 2400
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 2400,
+          "endMs": 3000
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 3599,
+          "endMs": 4199
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 4200,
+          "endMs": 4800
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 4800,
+          "endMs": 5399
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 6600,
+          "endMs": 7199
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 7200,
+          "endMs": 7800
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 7800,
+          "endMs": 8400
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 9000,
+          "endMs": 9600
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 9600,
+          "endMs": 10200
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 10200,
+          "endMs": 10799
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 11999,
+          "endMs": 12599
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 12600,
+          "endMs": 13200
+        },
+        {
+          "line": 4,
+          "token": 2,
+          "startMs": 13200,
+          "endMs": 13799
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 14399,
+          "endMs": 14999
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 14999,
+          "endMs": 15599
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 15599,
+          "endMs": 16200
+        },
+        {
+          "line": 6,
+          "token": 0,
+          "startMs": 17400,
+          "endMs": 18000
+        },
+        {
+          "line": 6,
+          "token": 1,
+          "startMs": 18000,
+          "endMs": 18600
+        },
+        {
+          "line": 6,
+          "token": 2,
+          "startMs": 18599,
+          "endMs": 19200
+        },
+        {
+          "line": 7,
+          "token": 0,
+          "startMs": 19799,
+          "endMs": 20400
+        },
+        {
+          "line": 7,
+          "token": 1,
+          "startMs": 20400,
+          "endMs": 21000
+        },
+        {
+          "line": 7,
+          "token": 2,
+          "startMs": 21000,
+          "endMs": 21600
+        },
+        {
+          "line": 8,
+          "token": 0,
+          "startMs": 22799,
+          "endMs": 23400
+        },
+        {
+          "line": 8,
+          "token": 1,
+          "startMs": 23400,
+          "endMs": 24000
+        },
+        {
+          "line": 8,
+          "token": 2,
+          "startMs": 24000,
+          "endMs": 24600
+        },
+        {
+          "line": 9,
+          "token": 0,
+          "startMs": 25200,
+          "endMs": 25800
+        },
+        {
+          "line": 9,
+          "token": 1,
+          "startMs": 25799,
+          "endMs": 26400
+        },
+        {
+          "line": 9,
+          "token": 2,
+          "startMs": 26400,
+          "endMs": 27000
+        }
+      ]
+    },
+    {
+      "id": "where_is_it",
+      "title": "Where Is It?",
+      "icon": "ball",
+      "audio": "audio/songs/where_is_it.ogg",
+      "bpm": 92,
+      "melody": [
+        "G",
+        "G",
+        "E",
+        "C",
+        "D",
+        "E",
+        "C",
+        "G"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "Where"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "my"
+            },
+            {
+              "text": "ball",
+              "word": "ball"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "it"
+            },
+            {
+              "text": "is"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Where"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "my"
+            },
+            {
+              "text": "shoe",
+              "word": "shoe"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "it"
+            },
+            {
+              "text": "is"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Where"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "my"
+            },
+            {
+              "text": "hat",
+              "word": "hat"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "it"
+            },
+            {
+              "text": "is"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Where"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "my"
+            },
+            {
+              "text": "cup",
+              "word": "cup"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "it"
+            },
+            {
+              "text": "is"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Where"
+            },
+            {
+              "text": "is"
+            },
+            {
+              "text": "my"
+            },
+            {
+              "text": "book",
+              "word": "book"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "it"
+            },
+            {
+              "text": "is"
+            }
+          ],
+          "restBeats": 2
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1304,
+          "endMs": 1956
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 1956,
+          "endMs": 2608
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 2608,
+          "endMs": 3260
+        },
+        {
+          "line": 0,
+          "token": 3,
+          "startMs": 3260,
+          "endMs": 3913
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 4565,
+          "endMs": 5217
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 5217,
+          "endMs": 5869
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 5869,
+          "endMs": 6521
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 7826,
+          "endMs": 8478
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 8478,
+          "endMs": 9130
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 9130,
+          "endMs": 9782
+        },
+        {
+          "line": 2,
+          "token": 3,
+          "startMs": 9782,
+          "endMs": 10434
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 11086,
+          "endMs": 11739
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 11739,
+          "endMs": 12391
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 12391,
+          "endMs": 13043
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 14347,
+          "endMs": 15000
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 15000,
+          "endMs": 15652
+        },
+        {
+          "line": 4,
+          "token": 2,
+          "startMs": 15652,
+          "endMs": 16304
+        },
+        {
+          "line": 4,
+          "token": 3,
+          "startMs": 16304,
+          "endMs": 16956
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 17608,
+          "endMs": 18260
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 18260,
+          "endMs": 18913
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 18913,
+          "endMs": 19565
+        },
+        {
+          "line": 6,
+          "token": 0,
+          "startMs": 20869,
+          "endMs": 21521
+        },
+        {
+          "line": 6,
+          "token": 1,
+          "startMs": 21521,
+          "endMs": 22173
+        },
+        {
+          "line": 6,
+          "token": 2,
+          "startMs": 22173,
+          "endMs": 22826
+        },
+        {
+          "line": 6,
+          "token": 3,
+          "startMs": 22826,
+          "endMs": 23478
+        },
+        {
+          "line": 7,
+          "token": 0,
+          "startMs": 24130,
+          "endMs": 24782
+        },
+        {
+          "line": 7,
+          "token": 1,
+          "startMs": 24782,
+          "endMs": 25434
+        },
+        {
+          "line": 7,
+          "token": 2,
+          "startMs": 25434,
+          "endMs": 26086
+        },
+        {
+          "line": 8,
+          "token": 0,
+          "startMs": 27391,
+          "endMs": 28043
+        },
+        {
+          "line": 8,
+          "token": 1,
+          "startMs": 28043,
+          "endMs": 28695
+        },
+        {
+          "line": 8,
+          "token": 2,
+          "startMs": 28695,
+          "endMs": 29347
+        },
+        {
+          "line": 8,
+          "token": 3,
+          "startMs": 29347,
+          "endMs": 30000
+        },
+        {
+          "line": 9,
+          "token": 0,
+          "startMs": 30652,
+          "endMs": 31304
+        },
+        {
+          "line": 9,
+          "token": 1,
+          "startMs": 31304,
+          "endMs": 31956
+        },
+        {
+          "line": 9,
+          "token": 2,
+          "startMs": 31956,
+          "endMs": 32608
+        }
+      ]
+    },
+    {
+      "id": "rain_and_sun",
+      "title": "Rain and Sun",
+      "icon": "rainbow",
+      "audio": "audio/songs/rain_and_sun.ogg",
+      "bpm": 88,
+      "melody": [
+        "C",
+        "E",
+        "G",
+        "C",
+        "B",
+        "G",
+        "E",
+        "D"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "rain",
+              "word": "rain"
+            },
+            {
+              "text": "rain",
+              "word": "rain"
+            },
+            {
+              "text": "rain",
+              "word": "rain"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Jump"
+            },
+            {
+              "text": "in"
+            },
+            {
+              "text": "the"
+            },
+            {
+              "text": "puddle",
+              "word": "puddle"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Here"
+            },
+            {
+              "text": "comes"
+            },
+            {
+              "text": "the"
+            },
+            {
+              "text": "sun",
+              "word": "sun"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Bye"
+            },
+            {
+              "text": "bye"
+            },
+            {
+              "text": "cloud",
+              "word": "cloud"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Look"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "rainbow",
+              "word": "rainbow"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "And"
+            },
+            {
+              "text": "a"
+            },
+            {
+              "text": "butterfly",
+              "word": "butterfly"
+            }
+          ],
+          "restBeats": 3
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1363,
+          "endMs": 2045
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 2045,
+          "endMs": 2727
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 2727,
+          "endMs": 3409
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 4772,
+          "endMs": 5454
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 5454,
+          "endMs": 6136
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 6136,
+          "endMs": 6818
+        },
+        {
+          "line": 1,
+          "token": 3,
+          "startMs": 6818,
+          "endMs": 7499
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 8863,
+          "endMs": 9545
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 9545,
+          "endMs": 10227
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 10227,
+          "endMs": 10909
+        },
+        {
+          "line": 2,
+          "token": 3,
+          "startMs": 10909,
+          "endMs": 11590
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 12954,
+          "endMs": 13636
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 13636,
+          "endMs": 14318
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 14318,
+          "endMs": 14999
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 16363,
+          "endMs": 17045
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 17045,
+          "endMs": 17727
+        },
+        {
+          "line": 4,
+          "token": 2,
+          "startMs": 17727,
+          "endMs": 18409
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 19772,
+          "endMs": 20454
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 20454,
+          "endMs": 21136
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 21136,
+          "endMs": 21818
+        }
+      ]
+    },
+    {
+      "id": "animal_sounds",
+      "title": "Animal Sounds",
+      "icon": "horse",
+      "audio": "audio/songs/animal_sounds.ogg",
+      "bpm": 100,
+      "melody": [
+        "C",
+        "C",
+        "G",
+        "G",
+        "A",
+        "A",
+        "G",
+        "F"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "horse",
+              "word": "horse"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "neigh"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "sheep",
+              "word": "sheep"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "baa"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "dog",
+              "word": "dog"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "woof"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "cat",
+              "word": "cat"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "meow"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "owl",
+              "word": "owl"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "hoo"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "The"
+            },
+            {
+              "text": "frog",
+              "word": "frog"
+            },
+            {
+              "text": "says"
+            },
+            {
+              "text": "ribbit"
+            }
+          ],
+          "restBeats": 3
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1200,
+          "endMs": 1799
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 1799,
+          "endMs": 2400
+        },
+        {
+          "line": 0,
+          "token": 2,
+          "startMs": 2400,
+          "endMs": 3000
+        },
+        {
+          "line": 0,
+          "token": 3,
+          "startMs": 3000,
+          "endMs": 3600
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 4800,
+          "endMs": 5399
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 5400,
+          "endMs": 6000
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 6000,
+          "endMs": 6600
+        },
+        {
+          "line": 1,
+          "token": 3,
+          "startMs": 6600,
+          "endMs": 7199
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 8399,
+          "endMs": 8999
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 9000,
+          "endMs": 9600
+        },
+        {
+          "line": 2,
+          "token": 2,
+          "startMs": 9600,
+          "endMs": 10200
+        },
+        {
+          "line": 2,
+          "token": 3,
+          "startMs": 10200,
+          "endMs": 10799
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 11999,
+          "endMs": 12599
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 12600,
+          "endMs": 13200
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 13200,
+          "endMs": 13799
+        },
+        {
+          "line": 3,
+          "token": 3,
+          "startMs": 13799,
+          "endMs": 14399
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 15599,
+          "endMs": 16200
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 16200,
+          "endMs": 16800
+        },
+        {
+          "line": 4,
+          "token": 2,
+          "startMs": 16800,
+          "endMs": 17400
+        },
+        {
+          "line": 4,
+          "token": 3,
+          "startMs": 17400,
+          "endMs": 18000
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 19200,
+          "endMs": 19800
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 19799,
+          "endMs": 20400
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 20400,
+          "endMs": 21000
+        },
+        {
+          "line": 5,
+          "token": 3,
+          "startMs": 21000,
+          "endMs": 21600
+        }
+      ]
     }
   ]
 }

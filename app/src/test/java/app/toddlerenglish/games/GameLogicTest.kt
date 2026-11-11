@@ -70,6 +70,25 @@ class GameLogicTest {
     }
 
     @Test
+    fun lyricHighlightFollowsTheSongClock() {
+        content.songs.forEach { song ->
+            assertEquals(-1, currentTokenIndex(song, 0))
+            song.timings.forEachIndexed { i, t ->
+                assertEquals("${song.id} token $i", i, currentTokenIndex(song, t.startMs.toLong() + 10))
+            }
+        }
+    }
+
+    @Test
+    fun sixToEightSongsEachTeachingWords() {
+        assertTrue(content.songs.size in 5..8)
+        content.songs.forEach { song ->
+            val words = song.lines.flatMap { it.tokens }.mapNotNull { it.word }.toSet()
+            assertTrue("${song.id} teaches ${words.size} words", words.size >= 4)
+        }
+    }
+
+    @Test
     fun tappingTheWrongThingNeverFailsAndNeverEndsTheRound() {
         val words = game("match").deckWords(content, "farm", 3)
         val round = FindRound(words, 4, 5, Random(9))

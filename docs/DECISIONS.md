@@ -124,3 +124,13 @@ Every game runs endless gentle rounds (8 pops, 5 finds, 5 feeds, 1 song); a fini
 backgrounded app adds nothing). At the limit the app shows the rest screen (Pebble sleeping, spoken "Time for a
 little rest"), with no countdown before it. Only the parental gate leads out; opening the gate starts a fresh
 session. Minutes played are added to progress for the parent corner.
+
+## D-024 Songs (proposed)
+Seven short original chants (Farm Friends, Yummy Food, Good Night, Look Outside, Where Is It?, Rain and Sun,
+Animal Sounds). Each lyric token is spoken by the voice and placed on a beat over soft generated tones, so word
+timings are exact and stored in `songs.json`. They sound like a rhythmic chant rather than singing; a recorded
+singer can replace any `audio/songs/<id>.ogg` later, keeping or re-measuring the timings. Each song earns a sticker.
+
+## D-025 Scene item halos (proposed)
+Every scene item sits on a soft white halo (`Palette.SceneHalo`). It keeps green things visible on grass and
+tan things on wooden floors, and makes it obvious that each item can be tapped.

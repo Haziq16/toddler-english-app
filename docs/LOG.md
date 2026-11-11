@@ -83,3 +83,15 @@ tier 3 farm (20 items), Feed Pebble (4 foods), sing-along with synced highlight,
 **Decisions:** D-022, D-023 (proposed).
 **Open:** rest screen after a real 5-minute limit not yet watched on device (logic unit-tested).
 **Next up:** start S6: write `assets/content/scenes/food.json` placements, then home, bedtime and outdoors.
+
+## 2026-11-12 15:10, Claude Code (Claude Opus 5.5), S6
+**Done:** layouts for food, home, bedtime and outdoors (20 placements each); item halos for contrast; six more
+original songs (7 total) with generated audio and timings; song stickers (30 stickers, all with distinct art);
+lyric-sync and song-count tests. CI now runs the validator in strict mode.
+**Files:** assets/content/scenes/{food,home,bedtime,outdoors}.json, assets/content/{songs,stickers}.json,
+assets/audio/songs/*.ogg, ui/screens/SceneScreen.kt, ui/theme/Tokens.kt, GameLogicTest.kt, CREDITS.md
+**State:** `validate_content.py` (strict): 100 words, each used in 2+ places; 5 scenes, 4 games, 7 songs.
+Build, 37 unit tests, lint, ktlint pass. All five scenes checked on the emulator at tier 3.
+**Decisions:** D-024, D-025 (proposed).
+**Open:** songs are spoken chants, not sung (D-024). Tablet layout still unchecked (S7).
+**Next up:** start S7: run the TalkBack/contrast/touch-target audit and write `docs/COMPLIANCE.md`.

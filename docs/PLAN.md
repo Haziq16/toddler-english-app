@@ -10,7 +10,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S3 Scene engine + Farm scene | done |
 | S4 Mascot and rewards | done |
 | S5 Mini-games and parent corner | done |
-| S6 Remaining scenes and songs | todo |
+| S6 Remaining scenes and songs | done |
 | S7 Polish and compliance | todo |
 | S8 Release prep | todo |
 

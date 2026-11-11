@@ -26,7 +26,8 @@ object Palette {
     val Blush = Color(0xFFF6B8B0)
     val Lilac = Color(0xFFC7B8EA)
 
-    // Games
+    // Scenes and games
+    val SceneHalo = Color(0x8CFFFFFF)
     val BubbleFill = Color(0x66FFFFFF)
     val BubbleEdge = Color(0xFF9ED8F0)
 

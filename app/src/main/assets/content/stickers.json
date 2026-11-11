@@ -147,7 +147,7 @@
     },
     {
       "id": "bubbles_10",
-      "word": "bubbles",
+      "word": "fish",
       "rule": {
         "type": "game_rounds",
         "game": "bubbles",
@@ -165,7 +165,7 @@
     },
     {
       "id": "match_10",
-      "word": "star",
+      "word": "flower",
       "rule": {
         "type": "game_rounds",
         "game": "match",
@@ -183,7 +183,7 @@
     },
     {
       "id": "singalong_10",
-      "word": "bird",
+      "word": "frog",
       "rule": {
         "type": "game_rounds",
         "game": "singalong",
@@ -201,11 +201,67 @@
     },
     {
       "id": "feed_10",
-      "word": "cookie",
+      "word": "honey",
       "rule": {
         "type": "game_rounds",
         "game": "feed",
         "count": 10
+      }
+    },
+    {
+      "id": "song_farm_friends",
+      "word": "duck",
+      "rule": {
+        "type": "song",
+        "song": "farm_friends"
+      }
+    },
+    {
+      "id": "song_yummy_food",
+      "word": "grape",
+      "rule": {
+        "type": "song",
+        "song": "yummy_food"
+      }
+    },
+    {
+      "id": "song_good_night",
+      "word": "teddy",
+      "rule": {
+        "type": "song",
+        "song": "good_night"
+      }
+    },
+    {
+      "id": "song_look_outside",
+      "word": "bus",
+      "rule": {
+        "type": "song",
+        "song": "look_outside"
+      }
+    },
+    {
+      "id": "song_where_is_it",
+      "word": "hat",
+      "rule": {
+        "type": "song",
+        "song": "where_is_it"
+      }
+    },
+    {
+      "id": "song_rain_and_sun",
+      "word": "cloud",
+      "rule": {
+        "type": "song",
+        "song": "rain_and_sun"
+      }
+    },
+    {
+      "id": "song_animal_sounds",
+      "word": "sheep",
+      "rule": {
+        "type": "song",
+        "song": "animal_sounds"
       }
     }
   ]
