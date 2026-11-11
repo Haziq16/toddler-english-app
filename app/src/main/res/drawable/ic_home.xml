@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home button: a little house. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FFE76F51" android:pathData="M12,3 L22,11.5 L19.5,11.5 L12,5.6 L4.5,11.5 L2,11.5 Z" />
+    <path android:fillColor="#FFFFD166" android:pathData="M5,11 L12,5.6 L19,11 L19,21 L5,21 Z" />
+    <path android:fillColor="#FFA9744F" android:pathData="M10,14.5 h4 v6.5 h-4 Z" />
+</vector>

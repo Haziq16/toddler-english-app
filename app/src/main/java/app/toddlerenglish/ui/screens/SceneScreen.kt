@@ -1,44 +1,265 @@
 package app.toddlerenglish.ui.screens
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import app.toddlerenglish.R
 import app.toddlerenglish.audio.WordAudio
 import app.toddlerenglish.content.Content
 import app.toddlerenglish.content.SceneInfo
+import app.toddlerenglish.content.Word
 import app.toddlerenglish.ui.components.ContentImage
+import app.toddlerenglish.ui.components.Mascot
+import app.toddlerenglish.ui.components.MascotState
 import app.toddlerenglish.ui.components.bouncyClickable
+import app.toddlerenglish.ui.components.rememberDrawableId
+import app.toddlerenglish.ui.scene.PlacedWord
+import app.toddlerenglish.ui.scene.SceneLayoutEngine
 import app.toddlerenglish.ui.theme.Dimens
+import app.toddlerenglish.ui.theme.Motion
 import app.toddlerenglish.ui.theme.Palette
+import kotlin.math.roundToInt
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
-/** S2 stand-in: the scene's words as a grid. S3 replaces it with the data-driven scene renderer. */
+/**
+ * The data-driven scene. Everything on screen comes from content: background drawable, word art, positions.
+ * One tap handler hit-tests the whole scene, so taps near an item still count, and a tap on empty space
+ * still gets a sparkle and a happy Pebble (every tap gets a positive response).
+ */
 @Composable
-fun SceneScreen(scene: SceneInfo, content: Content, audio: WordAudio, onHome: () -> Unit) {
+fun SceneScreen(
+    scene: SceneInfo,
+    content: Content,
+    audio: WordAudio,
+    mascot: MascotState,
+    maxTier: Int,
+    onWordHeard: (Word) -> Unit,
+    onHome: () -> Unit,
+) {
     BackHandler(onBack = onHome)
-    val words = content.wordsInScene(scene.id)
-    LazyVerticalGrid(
-        columns = GridCells.Adaptive(110.dp),
-        contentPadding = PaddingValues(Dimens.SpaceM),
-        horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
-        verticalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
-        modifier = Modifier.fillMaxSize().background(Palette.sceneTint(scene.tint)).safeDrawingPadding(),
+    val items = remember(scene.id, maxTier) {
+        SceneLayoutEngine.place(content.wordsInScene(scene.id), content.layouts[scene.id] ?: return@remember emptyList(), maxTier)
+    }
+    LaunchedEffect(items) { audio.preload(items.map { it.word.audio }) }
+
+    // Each item animates when its counter changes.
+    val pulses = remember(items) { mutableStateListOf(*Array(items.size) { 0 }) }
+    var label by remember { mutableStateOf<PlacedWord?>(null) }
+    var labelPulse by remember { mutableIntStateOf(0) }
+    val sparkles = remember { mutableStateListOf<Sparkle>() }
+    var sparkleId by remember { mutableIntStateOf(0) }
+
+    fun hear(index: Int) {
+        val item = items[index]
+        audio.play(item.word.audio)
+        pulses[index] = pulses[index] + 1
+        label = item
+        labelPulse++
+        onWordHeard(item.word)
+        if (pulses.sum() % 5 == 0) mascot.celebrate()
+    }
+
+    BoxWithConstraints(
+        Modifier
+            .fillMaxSize()
+            .background(Palette.sceneTint(scene.tint))
+            .testTag("scene_${scene.id}"),
     ) {
-        items(words, key = { it.id }) { word ->
-            ContentImage(
-                word.image,
-                contentDescription = word.text,
-                modifier = Modifier.aspectRatio(1f).bouncyClickable(word.text) { audio.play(word.audio) },
+        val density = LocalDensity.current
+        val wPx = with(density) { maxWidth.toPx() }
+        val hPx = with(density) { maxHeight.toPx() }
+        val side = minOf(maxWidth, maxHeight)
+        val minRadius = with(density) { (Dimens.TouchTarget / 2).toPx() }
+
+        val bgId = rememberDrawableId(scene.background)
+        if (bgId != 0) {
+            Image(painterResource(bgId), null, Modifier.fillMaxSize(), contentScale = ContentScale.FillBounds)
+        }
+
+        Box(
+            Modifier
+                .fillMaxSize()
+                .pointerInput(items) {
+                    detectTapGestures { pos ->
+                        val hit = SceneLayoutEngine.hitTest(items, pos.x, pos.y, wPx, hPx, minRadius)
+                        if (hit != null) {
+                            hear(items.indexOf(hit))
+                        } else {
+                            sparkles += Sparkle(sparkleId++, pos)
+                            if (sparkles.size > 6) sparkles.removeAt(0)
+                            mascot.encourage()
+                        }
+                    }
+                },
+        )
+
+        items.forEachIndexed { index, item ->
+            val sizeDp = (side * item.size).coerceAtLeast(Dimens.TouchTarget)
+            SceneItem(
+                item = item,
+                pulse = pulses[index],
+                modifier = Modifier
+                    .offset {
+                        IntOffset(
+                            (item.x * wPx - sizeDp.toPx() / 2).roundToInt(),
+                            (item.y * hPx - sizeDp.toPx() / 2).roundToInt(),
+                        )
+                    }
+                    .size(sizeDp)
+                    .semantics {
+                        contentDescription = item.word.text
+                        onClick(label = "Hear ${item.word.text}") {
+                            hear(index)
+                            true
+                        }
+                    },
             )
         }
+
+        sparkles.forEach { s -> SparkleBurst(s, onDone = { sparkles.remove(s) }) }
+
+        label?.let { WordLabel(it, labelPulse, wPx, hPx, side) { label = null } }
+
+        // Way home and Pebble sit above the scene.
+        Box(Modifier.fillMaxSize().safeDrawingPadding().padding(Dimens.SpaceS)) {
+            HomeButton(onHome, Modifier.align(Alignment.TopStart))
+            Mascot(
+                mascot,
+                Modifier
+                    .align(Alignment.BottomStart)
+                    .size(84.dp)
+                    .bouncyClickable("Pebble") {
+                        content.phrase("tap_and_listen")?.let { audio.play(it.audio) }
+                        mascot.celebrate()
+                    },
+            )
+        }
+    }
+}
+
+@Composable
+private fun SceneItem(item: PlacedWord, pulse: Int, modifier: Modifier) {
+    val scale = remember { Animatable(1f) }
+    val rotation = remember { Animatable(0f) }
+    LaunchedEffect(pulse) {
+        if (pulse == 0) return@LaunchedEffect
+        launch {
+            scale.animateTo(1.3f, tween(Motion.TAP_MS, easing = FastOutSlowInEasing))
+            scale.animateTo(1f, spring(dampingRatio = 0.4f))
+        }
+        rotation.animateTo(-8f, tween(90))
+        rotation.animateTo(8f, tween(140))
+        rotation.animateTo(0f, spring(dampingRatio = 0.5f))
+    }
+    Box(
+        modifier.graphicsLayer {
+            scaleX = scale.value
+            scaleY = scale.value
+            rotationZ = rotation.value
+        },
+    ) {
+        if (pulse > 0) {
+            // soft glow behind the highlighted item
+            Box(Modifier.fillMaxSize().graphicsLayer { alpha = (scale.value - 1f) * 2.5f }.background(Palette.Sun, CircleShape))
+        }
+        ContentImage(item.word.image, contentDescription = null, modifier = Modifier.fillMaxSize())
+    }
+}
+
+/** The word written under the item, mainly for the grown-up sitting with the child. */
+@Composable
+private fun WordLabel(item: PlacedWord, pulse: Int, wPx: Float, hPx: Float, side: Dp, onDone: () -> Unit) {
+    LaunchedEffect(pulse) {
+        delay(1_800)
+        onDone()
+    }
+    val density = LocalDensity.current
+    val below = with(density) { (side * item.size / 2).toPx() } + with(density) { 6.dp.toPx() }
+    val y = (item.y * hPx + below).coerceAtMost(hPx - with(density) { 48.dp.toPx() })
+    Text(
+        item.word.text,
+        style = MaterialTheme.typography.titleLarge,
+        color = Palette.Ink,
+        modifier = Modifier
+            .offset { IntOffset((item.x * wPx).roundToInt() - 60.dp.roundToPx(), y.roundToInt()) }
+            .size(width = 120.dp, height = 40.dp)
+            .background(Palette.Paper.copy(alpha = 0.9f), RoundedCornerShape(20.dp))
+            .padding(top = 6.dp),
+        textAlign = TextAlign.Center,
+    )
+}
+
+private data class Sparkle(val id: Int, val at: Offset)
+
+@Composable
+private fun SparkleBurst(s: Sparkle, onDone: () -> Unit) {
+    val t = remember(s.id) { Animatable(0f) }
+    LaunchedEffect(s.id) {
+        t.animateTo(1f, tween(600))
+        onDone()
+    }
+    Canvas(Modifier.fillMaxSize()) {
+        val r = 10.dp.toPx() + 40.dp.toPx() * t.value
+        for (i in 0 until 8) {
+            val a = Math.toRadians(i * 45.0)
+            val c = Offset(s.at.x + (r * kotlin.math.cos(a)).toFloat(), s.at.y + (r * kotlin.math.sin(a)).toFloat())
+            drawCircle(if (i % 2 == 0) Palette.Sun else Palette.Coral, radius = 6.dp.toPx() * (1f - t.value), center = c)
+        }
+    }
+}
+
+@Composable
+fun HomeButton(onHome: () -> Unit, modifier: Modifier = Modifier) {
+    Box(
+        modifier
+            .size(Dimens.TouchTarget)
+            .background(Palette.Paper.copy(alpha = 0.85f), CircleShape)
+            .bouncyClickable("Home", onClick = onHome)
+            .testTag("home_button"),
+        contentAlignment = Alignment.Center,
+    ) {
+        Image(painterResource(R.drawable.ic_home), contentDescription = "Home", modifier = Modifier.size(36.dp))
     }
 }

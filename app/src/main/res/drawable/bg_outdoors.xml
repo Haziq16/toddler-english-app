@@ -6,7 +6,7 @@
     android:viewportWidth="200"
     android:viewportHeight="120">
     <path android:pathData="M0,0 h200 v120 h-200 Z" android:fillColor="#CFEAF7" />
-    <path android:pathData="M0,60 Q60,40 120,58 Q160,46 200,56 L200,120 L0,120 Z" android:fillColor="#B5D65C" />
-    <path android:pathData="M0,92 Q100,74 200,92 L200,120 L0,120 Z" android:fillColor="#8CC84B" />
-    <path android:pathData="M120,120 Q150,90 200,80 L200,92 Q160,100 146,120 Z" android:fillColor="#9ED8F0" />
+    <path android:pathData="M0,40 Q60,26 120,38 Q160,30 200,36 L200,120 L0,120 Z" android:fillColor="#B5D65C" />
+    <path android:pathData="M0,74 Q100,60 200,74 L200,120 L0,120 Z" android:fillColor="#8CC84B" />
+    <path android:pathData="M130,120 Q150,96 200,86 L200,98 Q166,104 154,120 Z" android:fillColor="#9ED8F0" />
 </vector>

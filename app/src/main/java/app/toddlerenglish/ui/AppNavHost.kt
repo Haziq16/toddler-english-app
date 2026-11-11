@@ -66,7 +66,15 @@ fun AppNavHost(container: AppContainer, nav: NavHostController = rememberNavCont
             val id = entry.arguments?.getString("id").orEmpty()
             val scene = content.scenes.firstOrNull { it.id == id }
             if (scene != null) {
-                SceneScreen(scene = scene, content = content, audio = audio, onHome = ::goHome)
+                SceneScreen(
+                    scene = scene,
+                    content = content,
+                    audio = audio,
+                    mascot = mascot,
+                    maxTier = settings.tier,
+                    onWordHeard = { },
+                    onHome = ::goHome,
+                )
             }
         }
         composable(Routes.GATE) {

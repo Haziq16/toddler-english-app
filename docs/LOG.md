@@ -40,3 +40,17 @@ no network permission (checked with dumpsys).
 **Decisions:** D-017 to D-019 (proposed).
 **Open:** airplane-mode run is planned for S7 (network cannot be used anyway without the permission).
 **Next up:** start S3: write `ui/scene/SceneLayoutEngine.kt` (placements + auto-slots) and `assets/content/scenes/farm.json`.
+
+## 2026-11-12 12:00, Claude Code (Claude Opus 5.5), S3
+**Done:** data-driven scene renderer (`SceneScreen`), pure layout engine with auto slots and forgiving
+hit-testing (`SceneLayoutEngine`), highlight animation (grow, wiggle, glow, word label), sparkle on empty taps,
+home button, Farm layout (`scenes/farm.json`, 20 placements). Backgrounds redrawn without circles because they
+now stretch to the screen.
+**Files:** ui/scene/SceneLayoutEngine.kt, ui/screens/SceneScreen.kt, assets/content/scenes/farm.json,
+scripts/gen_art.py (backgrounds), res/drawable/ic_home.xml, docs/ARCHITECTURE.md
+**State:** build, tests, lint, ktlint pass. `SceneLayoutEngineTest.aWordAddedOnlyToWordsJsonStillAppears`
+proves the S3 "done when". Farm checked on the emulator at tier 1: tap on cow plays "Cow", it grows and its
+label shows.
+**Decisions:** none new.
+**Open:** tier 2-3 farm layout not yet seen on screen (tier picker comes in S5). Tablet layout not yet checked.
+**Next up:** start S4: write `data/ProgressRepository.kt` (words heard, stickers) and the sticker book screen.

@@ -6,11 +6,7 @@
     android:viewportWidth="200"
     android:viewportHeight="120">
     <path android:pathData="M0,0 h200 v120 h-200 Z" android:fillColor="#D9D4F2" />
-    <path android:pathData="M0,84 h200 v36 h-200 Z" android:fillColor="#B9AEDF" />
-    <path android:pathData="M18,12 h36 a4,4 0 0,1 4,4 v32 a4,4 0 0,1 -4,4 h-36 a4,4 0 0,1 -4,-4 v-32 a4,4 0 0,1 4,-4 Z" android:fillColor="#3D4A7A" android:strokeColor="#FFFFFF" android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
-    <path android:pathData="M40,20 A12,12 0 1,0 50,38 A9,9 0 1,1 40,20 Z" android:fillColor="#FFD166" />
-    <path android:pathData="M110.0,14.0 L110.9,16.7 L113.8,16.8 L111.5,18.5 L112.4,21.2 L110.0,19.6 L107.6,21.2 L108.5,18.5 L106.2,16.8 L109.1,16.7 Z" android:fillColor="#FFD166" />
-    <path android:pathData="M150.0,26.0 L150.9,28.7 L153.8,28.8 L151.5,30.5 L152.4,33.2 L150.0,31.6 L147.6,33.2 L148.5,30.5 L146.2,28.8 L149.1,28.7 Z" android:fillColor="#FFD166" />
-    <path android:pathData="M180.0,10.0 L180.9,12.7 L183.8,12.8 L181.5,14.5 L182.4,17.2 L180.0,15.6 L177.6,17.2 L178.5,14.5 L176.2,12.8 L179.1,12.7 Z" android:fillColor="#FFD166" />
-    <path android:pathData="M130.0,42.0 L130.9,44.7 L133.8,44.8 L131.5,46.5 L132.4,49.2 L130.0,47.6 L127.6,49.2 L128.5,46.5 L126.2,44.8 L129.1,44.7 Z" android:fillColor="#FFD166" />
+    <path android:pathData="M0,50 h200 v70 h-200 Z" android:fillColor="#B9AEDF" />
+    <path android:pathData="M0,48 h200 v3 h-200 Z" android:fillColor="#9C89D6" />
+    <path android:pathData="M144,8 h36 a4,4 0 0,1 4,4 v22 a4,4 0 0,1 -4,4 h-36 a4,4 0 0,1 -4,-4 v-22 a4,4 0 0,1 4,-4 Z" android:fillColor="#3D4A7A" android:strokeColor="#FFFFFF" android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" />
 </vector>
