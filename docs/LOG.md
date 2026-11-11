@@ -110,3 +110,20 @@ Pixel 8 Pro emulator (API 35). Release (R8) APK 3.5 MB.
 **Open:** privacy policy placeholders (developer name, contact email); voice licence (D-013); real low-end
 device run. GitHub Actions runs since S2 stayed queued on GitHub's side; S0 and S1 passed.
 **Next up:** start S8: write docs/RELEASE.md (signed AAB steps).
+
+## 2026-11-12 17:00, Claude Code (Claude Opus 5.5), S8
+**Done:** docs/RELEASE.md (upload key, keystore.properties, bundleRelease, verification, Play Console setup,
+internal > closed > production tracks), docs/STORE_LISTING.md (name, short and full description within limits,
+icon / feature graphic / screenshot specs and an 8-shot list with demo-mode capture commands),
+docs/TESTER_GUIDE.md (joining, 14-day rule, privacy, app pinning tip, checklist, questions). Backlog filled.
+GitHub Pages enabled for the privacy policy.
+**Files:** docs/{RELEASE,STORE_LISTING,TESTER_GUIDE,PLAN,DECISIONS}.md
+**State:** `bundleRelease` builds an unsigned 6 MB AAB (signing needs the owner's keystore). All S0-S8 done.
+**Decisions:** D-028 (proposed). All D-006 to D-028 await owner acceptance.
+**Open (owner only):** create the upload keystore and keystore.properties; create the Play developer account and
+app; fill the privacy policy placeholders (name, contact email); confirm voice rights (D-013) and the
+application id (D-009); recruit 15-20 closed testers now (12 must stay opted in for 14 consecutive days);
+capture store screenshots and export the 512 px icon and feature graphic. GitHub Actions runs for S2-S8 have been
+stuck in "queued" on GitHub's side; S0 and S1 passed.
+**Next up:** owner: create the upload key with the keytool command in docs/RELEASE.md section 1, then run
+`./gradlew bundleRelease` and upload the AAB to an internal testing track.

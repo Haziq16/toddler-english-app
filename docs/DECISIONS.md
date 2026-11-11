@@ -144,3 +144,8 @@ signed with the debug key, not debuggable) exists only for measuring on a device
 GitHub Pages serves `docs/` from `main`; `_config.yml` publishes only `index.md` and `privacy-policy.md`.
 Policy URL: https://haziq16.github.io/toddler-english-app/privacy-policy. The developer name and contact
 email are placeholders until the owner fills them in.
+
+## D-028 Release process (proposed)
+Play App Signing with a separate upload key kept outside the repository; `keystore.properties` (git-ignored)
+points the release build at it. Releases go internal testing, then a closed test (12+ testers for 14 days,
+required for a new personal developer account), then a staged production rollout. Details in docs/RELEASE.md.

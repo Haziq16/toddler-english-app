@@ -12,7 +12,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S5 Mini-games and parent corner | done |
 | S6 Remaining scenes and songs | done |
 | S7 Polish and compliance | done |
-| S8 Release prep | todo |
+| S8 Release prep | done |
 
 ## S0 Foundations
 - **Goal:** a buildable, testable, linted project with CI and handoff files.
@@ -60,4 +60,9 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 - **Done when:** the docs are complete. Note: a new personal Play developer account needs a closed test with at least 12 testers opted in for 14 consecutive days before production access, so tester recruiting should start as soon as S7 is done.
 
 ## Backlog
-- (empty)
+- Replace the placeholder voice with a recorded human voice (D-013), and sung song recordings (D-024).
+- Hand-drawn art to replace generated vector art, file by file (D-014).
+- First-language glosses in `translations` (schema ready, D-006), shown in the parent corner.
+- Respect the system "remove animations" setting with a calmer motion mode.
+- Landscape-specific scene layouts (items sit close together in landscape on phones).
+- A repeatable screenshot script for the store listing (demo mode + tier presets).
