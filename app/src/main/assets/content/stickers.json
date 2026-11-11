@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "stickers": [
+    {
+      "id": "farm_5",
+      "word": "cow",
+      "rule": {
+        "type": "scene_words",
+        "scene": "farm",
+        "count": 5
+      }
+    },
+    {
+      "id": "farm_10",
+      "word": "horse",
+      "rule": {
+        "type": "scene_words",
+        "scene": "farm",
+        "count": 10
+      }
+    },
+    {
+      "id": "farm_15",
+      "word": "tractor",
+      "rule": {
+        "type": "scene_words",
+        "scene": "farm",
+        "count": 15
+      }
+    },
+    {
+      "id": "food_5",
+      "word": "apple",
+      "rule": {
+        "type": "scene_words",
+        "scene": "food",
+        "count": 5
+      }
+    },
+    {
+      "id": "food_10",
+      "word": "cake",
+      "rule": {
+        "type": "scene_words",
+        "scene": "food",
+        "count": 10
+      }
+    },
+    {
+      "id": "food_15",
+      "word": "pizza",
+      "rule": {
+        "type": "scene_words",
+        "scene": "food",
+        "count": 15
+      }
+    },
+    {
+      "id": "home_5",
+      "word": "ball",
+      "rule": {
+        "type": "scene_words",
+        "scene": "home",
+        "count": 5
+      }
+    },
+    {
+      "id": "home_10",
+      "word": "clock",
+      "rule": {
+        "type": "scene_words",
+        "scene": "home",
+        "count": 10
+      }
+    },
+    {
+      "id": "home_15",
+      "word": "sofa",
+      "rule": {
+        "type": "scene_words",
+        "scene": "home",
+        "count": 15
+      }
+    },
+    {
+      "id": "bedtime_5",
+      "word": "moon",
+      "rule": {
+        "type": "scene_words",
+        "scene": "bedtime",
+        "count": 5
+      }
+    },
+    {
+      "id": "bedtime_10",
+      "word": "owl",
+      "rule": {
+        "type": "scene_words",
+        "scene": "bedtime",
+        "count": 10
+      }
+    },
+    {
+      "id": "bedtime_15",
+      "word": "pajamas",
+      "rule": {
+        "type": "scene_words",
+        "scene": "bedtime",
+        "count": 15
+      }
+    },
+    {
+      "id": "outdoors_5",
+      "word": "sun",
+      "rule": {
+        "type": "scene_words",
+        "scene": "outdoors",
+        "count": 5
+      }
+    },
+    {
+      "id": "outdoors_10",
+      "word": "butterfly",
+      "rule": {
+        "type": "scene_words",
+        "scene": "outdoors",
+        "count": 10
+      }
+    },
+    {
+      "id": "outdoors_15",
+      "word": "rainbow",
+      "rule": {
+        "type": "scene_words",
+        "scene": "outdoors",
+        "count": 15
+      }
+    },
+    {
+      "id": "bubbles_1",
+      "word": "bubbles",
+      "rule": {
+        "type": "game_rounds",
+        "game": "bubbles",
+        "count": 1
+      }
+    },
+    {
+      "id": "bubbles_10",
+      "word": "bubbles",
+      "rule": {
+        "type": "game_rounds",
+        "game": "bubbles",
+        "count": 10
+      }
+    },
+    {
+      "id": "match_1",
+      "word": "star",
+      "rule": {
+        "type": "game_rounds",
+        "game": "match",
+        "count": 1
+      }
+    },
+    {
+      "id": "match_10",
+      "word": "star",
+      "rule": {
+        "type": "game_rounds",
+        "game": "match",
+        "count": 10
+      }
+    },
+    {
+      "id": "singalong_1",
+      "word": "bird",
+      "rule": {
+        "type": "game_rounds",
+        "game": "singalong",
+        "count": 1
+      }
+    },
+    {
+      "id": "singalong_10",
+      "word": "bird",
+      "rule": {
+        "type": "game_rounds",
+        "game": "singalong",
+        "count": 10
+      }
+    },
+    {
+      "id": "feed_1",
+      "word": "cookie",
+      "rule": {
+        "type": "game_rounds",
+        "game": "feed",
+        "count": 1
+      }
+    },
+    {
+      "id": "feed_10",
+      "word": "cookie",
+      "rule": {
+        "type": "game_rounds",
+        "game": "feed",
+        "count": 10
+      }
+    }
+  ]
+}

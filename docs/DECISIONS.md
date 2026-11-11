@@ -96,3 +96,15 @@ buttons cannot be blocked without screen pinning, which is left to parents (docu
 
 ## D-019 Defaults (proposed)
 Default word tier 1, play-time limit 10 minutes, sound on. All three are parent settings in DataStore.
+
+## D-020 Stickers and progress (proposed)
+Stickers are data (`content/stickers.json`): 15 for hearing 5, 10 and 15 different words in each scene, 8 for
+playing each game once and ten times, plus one per song (added in S6). Stickers are only ever added. Empty spots
+in the sticker book are soft dotted circles that invite play, never "locked" icons. Progress stores only counts
+(words heard, rounds played, songs finished, minutes played) in a local DataStore file, excluded from cloud backup.
+
+## D-021 A positive response to every tap (proposed)
+Every child screen answers every tap: items speak and animate; empty space makes a sparkle burst and Pebble nods
+(`TapSparkles`, scene hit-test fallback). Pebble has no sad or cross mood. `ChildRulesTest` fails the build if a
+spoken phrase contains a negative word or child-screen code mentions wrong answers, game over, lives, countdowns
+or streaks.

@@ -22,7 +22,8 @@ class ContentLoader(private val read: (String) -> String?) {
         }
         val games = read("games.json")?.let { json.decodeFromString<GamesFile>(it).games }.orEmpty()
         val songs = read("songs.json")?.let { json.decodeFromString<SongsFile>(it).songs }.orEmpty()
-        return Content(words, phrases, scenes, layouts, games, songs)
+        val stickers = read("stickers.json")?.let { json.decodeFromString<StickersFile>(it).stickers }.orEmpty()
+        return Content(words, phrases, scenes, layouts, games, songs, stickers)
     }
 
     private fun require(name: String): String = read(name) ?: error("Missing content file $name")

@@ -217,6 +217,33 @@ def validate(lenient=False) -> Report:
             for wid in song_words:
                 uses[wid].append(f"song:{song.get('id')}")
 
+    # stickers
+    stickers_doc = load(rep, "stickers.json", required=False)
+    if stickers_doc:
+        stickers = stickers_doc.get("stickers", [])
+        check_ids(rep, "stickers.json", stickers)
+        game_ids = {g.get("id") for g in (games_doc or {}).get("games", [])}
+        song_ids = {s.get("id") for s in (songs_doc or {}).get("songs", [])}
+        for st in stickers:
+            where = f"sticker {st.get('id')!r}"
+            if st.get("word") not in word_ids:
+                rep.error(f"{where}: word {st.get('word')!r} not in words.json")
+            rule = st.get("rule") or {}
+            kind = rule.get("type")
+            if kind == "scene_words":
+                if rule.get("scene") not in scene_ids:
+                    rep.error(f"{where}: unknown scene {rule.get('scene')!r}")
+                elif rule.get("count", 1) > sum(1 for w in words if w.get("scene") == rule.get("scene")):
+                    rep.error(f"{where}: count is more than the words in the scene")
+            elif kind == "game_rounds":
+                if games_doc and rule.get("game") not in game_ids:
+                    rep.error(f"{where}: unknown game {rule.get('game')!r}")
+            elif kind == "song":
+                if songs_doc and rule.get("song") not in song_ids:
+                    rep.error(f"{where}: unknown song {rule.get('song')!r}")
+            else:
+                rep.error(f"{where}: rule type must be scene_words, game_rounds or song")
+
     # usage rule
     for wid in sorted(word_ids):
         n = len(uses[wid])

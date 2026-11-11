@@ -8,7 +8,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S1 Content and look | done |
 | S2 Shell | done |
 | S3 Scene engine + Farm scene | done |
-| S4 Mascot and rewards | todo |
+| S4 Mascot and rewards | done |
 | S5 Mini-games and parent corner | todo |
 | S6 Remaining scenes and songs | todo |
 | S7 Polish and compliance | todo |

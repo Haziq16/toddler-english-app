@@ -36,6 +36,7 @@ import app.toddlerenglish.ui.components.ContentImage
 import app.toddlerenglish.ui.components.Mascot
 import app.toddlerenglish.ui.components.MascotState
 import app.toddlerenglish.ui.components.ParentButton
+import app.toddlerenglish.ui.components.TapSparkles
 import app.toddlerenglish.ui.components.bouncyClickable
 import app.toddlerenglish.ui.theme.Dimens
 import app.toddlerenglish.ui.theme.Palette
@@ -66,55 +67,56 @@ fun HomeScreen(
         }
     }
 
-    Column(
-        Modifier
-            .fillMaxSize()
-            .background(Palette.Cream)
-            .safeDrawingPadding(),
-    ) {
-        Row(
+    TapSparkles(Modifier.fillMaxSize().background(Palette.Cream), onEmptyTap = { mascot.encourage() }) {
+        Column(
             Modifier
-                .fillMaxWidth()
-                .padding(horizontal = Dimens.SpaceM, vertical = Dimens.SpaceS),
-            verticalAlignment = Alignment.CenterVertically,
+                .fillMaxSize()
+                .safeDrawingPadding(),
         ) {
-            Mascot(
-                state = mascot,
-                modifier = Modifier
-                    .size(96.dp)
-                    .bouncyClickable("Pebble says hello") {
-                        content.phrase("hello")?.let { audio.play(it.audio) }
-                        mascot.celebrate()
-                    },
-            )
-            Spacer(Modifier.weight(1f))
-            ParentButton(onClick = onParent)
-        }
-        val scenes = content.scenes
-        LazyVerticalGrid(
-            columns = GridCells.Adaptive(minSize = 150.dp),
-            contentPadding = PaddingValues(Dimens.SpaceM),
-            horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
-            verticalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
-            modifier = Modifier.fillMaxSize(),
-        ) {
-            items(scenes, key = { it.id }) { scene ->
-                Tile(
-                    title = scene.title,
-                    icon = content.word(scene.icon)?.image ?: "",
-                    tint = Palette.sceneTint(scene.tint),
-                ) {
-                    content.phrase(scene.phrase)?.let { audio.play(it.audio) }
-                    onScene(scene)
+            Row(
+                Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = Dimens.SpaceM, vertical = Dimens.SpaceS),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Mascot(
+                    state = mascot,
+                    modifier = Modifier
+                        .size(96.dp)
+                        .bouncyClickable("Pebble says hello") {
+                            content.phrase("hello")?.let { audio.play(it.audio) }
+                            mascot.celebrate()
+                        },
+                )
+                Spacer(Modifier.weight(1f))
+                ParentButton(onClick = onParent)
+            }
+            val scenes = content.scenes
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(minSize = 150.dp),
+                contentPadding = PaddingValues(Dimens.SpaceM),
+                horizontalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
+                verticalArrangement = Arrangement.spacedBy(Dimens.SpaceM),
+                modifier = Modifier.fillMaxSize(),
+            ) {
+                items(scenes, key = { it.id }) { scene ->
+                    Tile(
+                        title = scene.title,
+                        icon = content.word(scene.icon)?.image ?: "",
+                        tint = Palette.sceneTint(scene.tint),
+                    ) {
+                        content.phrase(scene.phrase)?.let { audio.play(it.audio) }
+                        onScene(scene)
+                    }
                 }
-            }
-            if (extraTiles.isNotEmpty()) {
-                item(span = { GridItemSpan(maxLineSpan) }) { Spacer(Modifier.size(Dimens.SpaceS)) }
-            }
-            items(extraTiles, key = { it.id }) { tile ->
-                Tile(title = tile.title, icon = tile.icon, tint = tile.tint) {
-                    tile.phraseAudio?.let(audio::play)
-                    onTile(tile)
+                if (extraTiles.isNotEmpty()) {
+                    item(span = { GridItemSpan(maxLineSpan) }) { Spacer(Modifier.size(Dimens.SpaceS)) }
+                }
+                items(extraTiles, key = { it.id }) { tile ->
+                    Tile(title = tile.title, icon = tile.icon, tint = tile.tint) {
+                        tile.phraseAudio?.let(audio::play)
+                        onTile(tile)
+                    }
                 }
             }
         }

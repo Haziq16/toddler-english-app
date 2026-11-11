@@ -54,3 +54,17 @@ label shows.
 **Decisions:** none new.
 **Open:** tier 2-3 farm layout not yet seen on screen (tier picker comes in S5). Tablet layout not yet checked.
 **Next up:** start S4: write `data/ProgressRepository.kt` (words heard, stickers) and the sticker book screen.
+
+## 2026-11-12 12:45, Claude Code (Claude Opus 5.5), S4
+**Done:** Pebble moods animated (idle bob and blink, celebrate hop and wings, encourage tilt, sleep breathing);
+ProgressRepository (DataStore, counts only); sticker catalogue (`stickers.json`, 23 stickers) with pure
+`Rewards` rules and `Rewarder` coordinator; sticker celebration overlay with spoken "A new sticker for you!";
+sticker book screen; `TapSparkles` so empty taps sparkle on home, scene and sticker book; ChildRulesTest.
+**Files:** data/{Progress*,Rewards,Rewarder}.kt, ui/components/{Mascot,Stickers}.kt,
+ui/screens/StickerBookScreen.kt, ui/AppNavHost.kt, assets/content/stickers.json, validate_content.py
+**State:** build, tests, lint, ktlint pass. On the emulator, tapping five farm animals awards the cow sticker.
+Wrong-answer audit: no screen has one (only scenes, sticker book, gate and parent corner exist; games in S5
+follow the same rule and ChildRulesTest covers the `games` package).
+**Decisions:** D-020, D-021 (proposed).
+**Open:** none new.
+**Next up:** start S5: write `assets/content/games.json` (four games, decks per scene) and `games/GameRounds.kt`.

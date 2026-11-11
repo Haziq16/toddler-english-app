@@ -5,7 +5,6 @@ import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -23,6 +22,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -52,6 +52,7 @@ import app.toddlerenglish.content.Word
 import app.toddlerenglish.ui.components.ContentImage
 import app.toddlerenglish.ui.components.Mascot
 import app.toddlerenglish.ui.components.MascotState
+import app.toddlerenglish.ui.components.SparkleBurst
 import app.toddlerenglish.ui.components.bouncyClickable
 import app.toddlerenglish.ui.components.rememberDrawableId
 import app.toddlerenglish.ui.scene.PlacedWord
@@ -158,7 +159,7 @@ fun SceneScreen(
             )
         }
 
-        sparkles.forEach { s -> SparkleBurst(s, onDone = { sparkles.remove(s) }) }
+        sparkles.forEach { s -> key(s.id) { SparkleBurst(s.at) { sparkles.remove(s) } } }
 
         label?.let { WordLabel(it, labelPulse, wPx, hPx, side) { label = null } }
 
@@ -232,23 +233,6 @@ private fun WordLabel(item: PlacedWord, pulse: Int, wPx: Float, hPx: Float, side
 }
 
 private data class Sparkle(val id: Int, val at: Offset)
-
-@Composable
-private fun SparkleBurst(s: Sparkle, onDone: () -> Unit) {
-    val t = remember(s.id) { Animatable(0f) }
-    LaunchedEffect(s.id) {
-        t.animateTo(1f, tween(600))
-        onDone()
-    }
-    Canvas(Modifier.fillMaxSize()) {
-        val r = 10.dp.toPx() + 40.dp.toPx() * t.value
-        for (i in 0 until 8) {
-            val a = Math.toRadians(i * 45.0)
-            val c = Offset(s.at.x + (r * kotlin.math.cos(a)).toFloat(), s.at.y + (r * kotlin.math.sin(a)).toFloat())
-            drawCircle(if (i % 2 == 0) Palette.Sun else Palette.Coral, radius = 6.dp.toPx() * (1f - t.value), center = c)
-        }
-    }
-}
 
 @Composable
 fun HomeButton(onHome: () -> Unit, modifier: Modifier = Modifier) {

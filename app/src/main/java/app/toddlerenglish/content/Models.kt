@@ -87,6 +87,17 @@ data class Song(
 @Serializable
 data class SongsFile(val schemaVersion: Int, val songs: List<Song>)
 
+/** When a sticker is earned. `type` is scene_words, game_rounds or song. */
+@Serializable
+data class StickerRule(val type: String, val count: Int = 1, val scene: String? = null, val game: String? = null, val song: String? = null)
+
+/** A collectable sticker. Its picture is the art of [word]. */
+@Serializable
+data class Sticker(val id: String, val word: String, val rule: StickerRule)
+
+@Serializable
+data class StickersFile(val schemaVersion: Int, val stickers: List<Sticker>)
+
 /** Everything the app shows, loaded once at start. */
 data class Content(
     val words: List<Word>,
@@ -95,6 +106,7 @@ data class Content(
     val layouts: Map<String, SceneLayout>,
     val games: List<Game>,
     val songs: List<Song>,
+    val stickers: List<Sticker> = emptyList(),
 ) {
     private val wordIndex = words.associateBy { it.id }
     private val phraseIndex = phrases.associateBy { it.id }
