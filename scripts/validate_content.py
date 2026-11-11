@@ -176,7 +176,7 @@ def validate(lenient=False) -> Report:
             if g.get("phrase") not in phrase_ids:
                 rep.error(f"{where}: phrase {g.get('phrase')!r} not in phrases.json")
             decks = g.get("decks") or {}
-            if not decks:
+            if not decks and g.get("type") != "singalong":
                 rep.error(f"{where}: no decks")
             for deck_id, deck in decks.items():
                 dw = f"{where} deck {deck_id!r}"

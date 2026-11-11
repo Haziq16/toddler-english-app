@@ -108,3 +108,19 @@ Every child screen answers every tap: items speak and animate; empty space makes
 (`TapSparkles`, scene hit-test fallback). Pebble has no sad or cross mood. `ChildRulesTest` fails the build if a
 spoken phrase contains a negative word or child-screen code mentions wrong answers, game over, lives, countdowns
 or streaks.
+
+## D-022 Mini-games and tiers (proposed)
+Four games from `games.json`, all reading words at or below the parent's tier:
+- **Bubbles:** pictures float up in bubbles; every pop says the word. Tier 1/2/3 = 3/4/5 bubbles, 9/7.5/6 s rise.
+- **Find it (match):** Pebble says "Can you find the ..."; 2/3/4 pictures by tier. Another picture is named and
+  wiggles, then Pebble asks again. No failure sound or mark.
+- **Feed Pebble:** tier 1 Pebble eats whatever is tapped; from tier 2 Pebble asks for one food by name; 2/3/4 foods.
+- **Sing-along:** tier 1 shows the picture of the word being sung, tier 2 adds the current lyric line with the
+  sung word highlighted, tier 3 adds the next line.
+Every game runs endless gentle rounds (8 pops, 5 finds, 5 feeds, 1 song); a finished round only feeds stickers.
+
+## D-023 Play-time limit (proposed)
+`SessionTimer` counts only time on child screens while the app is resumed (each tick capped at 5 s, so a
+backgrounded app adds nothing). At the limit the app shows the rest screen (Pebble sleeping, spoken "Time for a
+little rest"), with no countdown before it. Only the parental gate leads out; opening the gate starts a fresh
+session. Minutes played are added to progress for the parent corner.

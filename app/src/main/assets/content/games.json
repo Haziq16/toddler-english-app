@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "id": "bubbles",
+      "type": "bubbles",
+      "title": "Bubbles",
+      "phrase": "game_bubbles",
+      "icon": "bubbles",
+      "minWordsPerTier": 3,
+      "decks": {
+        "farm": {
+          "words": [
+            "cow",
+            "pig",
+            "duck",
+            "hen",
+            "dog",
+            "cat",
+            "egg",
+            "horse",
+            "sheep",
+            "goat",
+            "chick",
+            "lamb",
+            "mouse",
+            "barn",
+            "gate",
+            "rabbit",
+            "donkey",
+            "tractor",
+            "fence",
+            "hay"
+          ]
+        },
+        "food": {
+          "words": [
+            "apple",
+            "banana",
+            "milk",
+            "cake",
+            "water",
+            "bread",
+            "juice",
+            "rice",
+            "cheese",
+            "grape",
+            "pear",
+            "carrot",
+            "soup",
+            "cookie",
+            "corn",
+            "orange",
+            "pizza",
+            "yogurt",
+            "peas",
+            "honey"
+          ]
+        },
+        "home": {
+          "words": [
+            "ball",
+            "cup",
+            "door",
+            "chair",
+            "book",
+            "shoe",
+            "hat",
+            "sock",
+            "table",
+            "key",
+            "box",
+            "clock",
+            "lamp",
+            "bag",
+            "phone",
+            "window",
+            "sofa",
+            "plant",
+            "mirror",
+            "stairs"
+          ]
+        },
+        "bedtime": {
+          "words": [
+            "bed",
+            "moon",
+            "star",
+            "bath",
+            "teddy",
+            "hug",
+            "pillow",
+            "blanket",
+            "soap",
+            "towel",
+            "owl",
+            "night",
+            "sleep",
+            "slippers",
+            "toothbrush",
+            "pajamas",
+            "bubbles",
+            "yawn",
+            "dream",
+            "quiet"
+          ]
+        },
+        "outdoors": {
+          "words": [
+            "sun",
+            "tree",
+            "car",
+            "bus",
+            "bird",
+            "fish",
+            "rain",
+            "flower",
+            "bee",
+            "frog",
+            "kite",
+            "boat",
+            "cloud",
+            "leaf",
+            "bike",
+            "snail",
+            "butterfly",
+            "swing",
+            "puddle",
+            "rainbow"
+          ]
+        }
+      }
+    },
+    {
+      "id": "match",
+      "type": "match",
+      "title": "Find it",
+      "phrase": "game_match",
+      "icon": "star",
+      "minWordsPerTier": 4,
+      "decks": {
+        "farm": {
+          "words": [
+            "cow",
+            "pig",
+            "duck",
+            "hen",
+            "dog",
+            "cat",
+            "egg",
+            "horse",
+            "sheep",
+            "goat",
+            "chick",
+            "lamb",
+            "mouse",
+            "barn",
+            "gate",
+            "rabbit",
+            "donkey",
+            "tractor",
+            "fence",
+            "hay"
+          ]
+        },
+        "food": {
+          "words": [
+            "apple",
+            "banana",
+            "milk",
+            "cake",
+            "water",
+            "bread",
+            "juice",
+            "rice",
+            "cheese",
+            "grape",
+            "pear",
+            "carrot",
+            "soup",
+            "cookie",
+            "corn",
+            "orange",
+            "pizza",
+            "yogurt",
+            "peas",
+            "honey"
+          ]
+        },
+        "home": {
+          "words": [
+            "ball",
+            "cup",
+            "door",
+            "chair",
+            "book",
+            "shoe",
+            "hat",
+            "sock",
+            "table",
+            "key",
+            "box",
+            "clock",
+            "lamp",
+            "bag",
+            "phone",
+            "window",
+            "sofa",
+            "plant",
+            "mirror",
+            "stairs"
+          ]
+        },
+        "bedtime": {
+          "words": [
+            "bed",
+            "moon",
+            "star",
+            "bath",
+            "teddy",
+            "hug",
+            "pillow",
+            "blanket",
+            "soap",
+            "towel",
+            "owl",
+            "night",
+            "sleep",
+            "slippers",
+            "toothbrush",
+            "pajamas",
+            "bubbles",
+            "yawn",
+            "dream",
+            "quiet"
+          ]
+        },
+        "outdoors": {
+          "words": [
+            "sun",
+            "tree",
+            "car",
+            "bus",
+            "bird",
+            "fish",
+            "rain",
+            "flower",
+            "bee",
+            "frog",
+            "kite",
+            "boat",
+            "cloud",
+            "leaf",
+            "bike",
+            "snail",
+            "butterfly",
+            "swing",
+            "puddle",
+            "rainbow"
+          ]
+        }
+      }
+    },
+    {
+      "id": "feed",
+      "type": "feed",
+      "title": "Feed Pebble",
+      "phrase": "game_feed",
+      "icon": "cookie",
+      "minWordsPerTier": 4,
+      "decks": {
+        "food": {
+          "words": [
+            "egg",
+            "apple",
+            "banana",
+            "milk",
+            "cake",
+            "water",
+            "bread",
+            "juice",
+            "rice",
+            "cheese",
+            "grape",
+            "pear",
+            "carrot",
+            "soup",
+            "cookie",
+            "corn",
+            "orange",
+            "pizza",
+            "yogurt",
+            "peas",
+            "honey"
+          ]
+        }
+      }
+    },
+    {
+      "id": "singalong",
+      "type": "singalong",
+      "title": "Sing along",
+      "phrase": "game_sing",
+      "icon": "bird",
+      "decks": {}
+    }
+  ]
+}

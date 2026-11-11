@@ -68,3 +68,18 @@ follow the same rule and ChildRulesTest covers the `games` package).
 **Decisions:** D-020, D-021 (proposed).
 **Open:** none new.
 **Next up:** start S5: write `assets/content/games.json` (four games, decks per scene) and `games/GameRounds.kt`.
+
+## 2026-11-12 14:20, Claude Code (Claude Opus 5.5), S5
+**Done:** games.json (4 games, decks per scene and a food deck), first song (Farm Friends) with generated timings,
+pure game rules (`GameLogic.kt`: tier rules, BubblesRound, FindRound), Bubbles, Find it, Feed Pebble and
+Sing-along screens, games menu, Media3 `SongPlayer`, `SessionTimer` and rest screen, full parent corner
+(progress by scene, most-heard words, game rounds, word level, play-time limit, sound, close app, reset with
+confirmation). Scene items now stay inside the safe area.
+**Files:** games/*, audio/SongPlayer.kt, parent/{SessionTimer,ParentCornerScreen}.kt, ui/screens/RestScreen.kt,
+ui/AppNavHost.kt, assets/content/{games,songs}.json, assets/audio/songs/farm_friends.ogg
+**State:** build, 40 unit tests, lint, ktlint and strict validation pass (all 100 words used in 2+ places).
+`GameLogicTest` plays every game at tiers 1-3 on every deck. On the emulator: tier 1 Find it and Bubbles,
+tier 3 farm (20 items), Feed Pebble (4 foods), sing-along with synced highlight, parent corner progress.
+**Decisions:** D-022, D-023 (proposed).
+**Open:** rest screen after a real 5-minute limit not yet watched on device (logic unit-tested).
+**Next up:** start S6: write `assets/content/scenes/food.json` placements, then home, bedtime and outdoors.

@@ -30,7 +30,7 @@ ASSETS = ROOT / "app/src/main/assets"
 CONTENT = ASSETS / "content"
 CACHE_FILE = ROOT / "scripts/audio_cache.json"
 RATE = 22050
-PROCESS_VERSION = "2"  # bump to force regeneration after changing processing
+PROCESS_VERSION = "3"  # bump to force regeneration after changing processing
 TARGET_RMS_DB = -19.0
 PEAK_LIMIT = 0.89
 
@@ -163,7 +163,10 @@ def build_song(song: dict, voice: str, rate: int) -> tuple[np.ndarray, list[dict
         note_i += 1
         timings.append({"line": li, "token": ti, "startMs": int(start_s * 1000), "endMs": int((start_s + beat) * 1000)})
         pos_beat += 1
-    mix = trim(mix, threshold=0.002, pad_s=0.3)
+    # Trim only the tail: the timings are measured from the very start of the file.
+    loud = np.where(np.abs(mix) > 0.002)[0]
+    if len(loud):
+        mix = mix[: min(len(mix), loud[-1] + int(0.3 * RATE))]
     peak = float(np.max(np.abs(mix))) or 1e-9
     mix = mix * (PEAK_LIMIT / peak) if peak > PEAK_LIMIT else mix
     return mix, timings

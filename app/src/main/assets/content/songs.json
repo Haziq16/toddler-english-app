@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "songs": [
+    {
+      "id": "farm_friends",
+      "title": "Farm Friends",
+      "icon": "cow",
+      "audio": "audio/songs/farm_friends.ogg",
+      "bpm": 96,
+      "melody": [
+        "C",
+        "E",
+        "G",
+        "E",
+        "F",
+        "D",
+        "C",
+        "G"
+      ],
+      "lines": [
+        {
+          "tokens": [
+            {
+              "text": "Hello"
+            },
+            {
+              "text": "cow",
+              "word": "cow"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Moo"
+            },
+            {
+              "text": "moo"
+            },
+            {
+              "text": "moo"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Hello"
+            },
+            {
+              "text": "pig",
+              "word": "pig"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Oink"
+            },
+            {
+              "text": "oink"
+            },
+            {
+              "text": "oink"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Hello"
+            },
+            {
+              "text": "duck",
+              "word": "duck"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Quack"
+            },
+            {
+              "text": "quack"
+            },
+            {
+              "text": "quack"
+            }
+          ],
+          "restBeats": 2
+        },
+        {
+          "tokens": [
+            {
+              "text": "Hello"
+            },
+            {
+              "text": "hen",
+              "word": "hen"
+            }
+          ],
+          "restBeats": 1
+        },
+        {
+          "tokens": [
+            {
+              "text": "Cluck"
+            },
+            {
+              "text": "cluck"
+            },
+            {
+              "text": "cluck"
+            }
+          ],
+          "restBeats": 2
+        }
+      ],
+      "timings": [
+        {
+          "line": 0,
+          "token": 0,
+          "startMs": 1250,
+          "endMs": 1875
+        },
+        {
+          "line": 0,
+          "token": 1,
+          "startMs": 1875,
+          "endMs": 2500
+        },
+        {
+          "line": 1,
+          "token": 0,
+          "startMs": 3125,
+          "endMs": 3750
+        },
+        {
+          "line": 1,
+          "token": 1,
+          "startMs": 3750,
+          "endMs": 4375
+        },
+        {
+          "line": 1,
+          "token": 2,
+          "startMs": 4375,
+          "endMs": 5000
+        },
+        {
+          "line": 2,
+          "token": 0,
+          "startMs": 6250,
+          "endMs": 6875
+        },
+        {
+          "line": 2,
+          "token": 1,
+          "startMs": 6875,
+          "endMs": 7500
+        },
+        {
+          "line": 3,
+          "token": 0,
+          "startMs": 8125,
+          "endMs": 8750
+        },
+        {
+          "line": 3,
+          "token": 1,
+          "startMs": 8750,
+          "endMs": 9375
+        },
+        {
+          "line": 3,
+          "token": 2,
+          "startMs": 9375,
+          "endMs": 10000
+        },
+        {
+          "line": 4,
+          "token": 0,
+          "startMs": 11250,
+          "endMs": 11875
+        },
+        {
+          "line": 4,
+          "token": 1,
+          "startMs": 11875,
+          "endMs": 12500
+        },
+        {
+          "line": 5,
+          "token": 0,
+          "startMs": 13125,
+          "endMs": 13750
+        },
+        {
+          "line": 5,
+          "token": 1,
+          "startMs": 13750,
+          "endMs": 14375
+        },
+        {
+          "line": 5,
+          "token": 2,
+          "startMs": 14375,
+          "endMs": 15000
+        },
+        {
+          "line": 6,
+          "token": 0,
+          "startMs": 16250,
+          "endMs": 16875
+        },
+        {
+          "line": 6,
+          "token": 1,
+          "startMs": 16875,
+          "endMs": 17500
+        },
+        {
+          "line": 7,
+          "token": 0,
+          "startMs": 18125,
+          "endMs": 18750
+        },
+        {
+          "line": 7,
+          "token": 1,
+          "startMs": 18750,
+          "endMs": 19375
+        },
+        {
+          "line": 7,
+          "token": 2,
+          "startMs": 19375,
+          "endMs": 20000
+        }
+      ]
+    }
+  ]
+}

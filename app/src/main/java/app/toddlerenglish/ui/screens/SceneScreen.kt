@@ -102,80 +102,78 @@ fun SceneScreen(
         if (pulses.sum() % 5 == 0) mascot.celebrate()
     }
 
-    BoxWithConstraints(
-        Modifier
-            .fillMaxSize()
-            .background(Palette.sceneTint(scene.tint))
-            .testTag("scene_${scene.id}"),
-    ) {
-        val density = LocalDensity.current
-        val wPx = with(density) { maxWidth.toPx() }
-        val hPx = with(density) { maxHeight.toPx() }
-        val side = minOf(maxWidth, maxHeight)
-        val minRadius = with(density) { (Dimens.TouchTarget / 2).toPx() }
-
+    // The background fills the whole screen; items live inside the safe area so none hide under system bars.
+    Box(Modifier.fillMaxSize().background(Palette.sceneTint(scene.tint)).testTag("scene_${scene.id}")) {
         val bgId = rememberDrawableId(scene.background)
         if (bgId != 0) {
             Image(painterResource(bgId), null, Modifier.fillMaxSize(), contentScale = ContentScale.FillBounds)
         }
+        BoxWithConstraints(Modifier.fillMaxSize().safeDrawingPadding()) {
+            val density = LocalDensity.current
+            val wPx = with(density) { maxWidth.toPx() }
+            val hPx = with(density) { maxHeight.toPx() }
+            val side = minOf(maxWidth, maxHeight)
+            val minRadius = with(density) { (Dimens.TouchTarget / 2).toPx() }
 
-        Box(
-            Modifier
-                .fillMaxSize()
-                .pointerInput(items) {
-                    detectTapGestures { pos ->
-                        val hit = SceneLayoutEngine.hitTest(items, pos.x, pos.y, wPx, hPx, minRadius)
-                        if (hit != null) {
-                            hear(items.indexOf(hit))
-                        } else {
-                            sparkles += Sparkle(sparkleId++, pos)
-                            if (sparkles.size > 6) sparkles.removeAt(0)
-                            mascot.encourage()
-                        }
-                    }
-                },
-        )
-
-        items.forEachIndexed { index, item ->
-            val sizeDp = (side * item.size).coerceAtLeast(Dimens.TouchTarget)
-            SceneItem(
-                item = item,
-                pulse = pulses[index],
-                modifier = Modifier
-                    .offset {
-                        IntOffset(
-                            (item.x * wPx - sizeDp.toPx() / 2).roundToInt(),
-                            (item.y * hPx - sizeDp.toPx() / 2).roundToInt(),
-                        )
-                    }
-                    .size(sizeDp)
-                    .semantics {
-                        contentDescription = item.word.text
-                        onClick(label = "Hear ${item.word.text}") {
-                            hear(index)
-                            true
-                        }
-                    },
-            )
-        }
-
-        sparkles.forEach { s -> key(s.id) { SparkleBurst(s.at) { sparkles.remove(s) } } }
-
-        label?.let { WordLabel(it, labelPulse, wPx, hPx, side) { label = null } }
-
-        // Way home and Pebble sit above the scene.
-        Box(Modifier.fillMaxSize().safeDrawingPadding().padding(Dimens.SpaceS)) {
-            HomeButton(onHome, Modifier.align(Alignment.TopStart))
-            Mascot(
-                mascot,
+            Box(
                 Modifier
-                    .align(Alignment.BottomStart)
-                    .size(84.dp)
-                    .bouncyClickable("Pebble") {
-                        content.phrase("tap_and_listen")?.let { audio.play(it.audio) }
-                        mascot.celebrate()
+                    .fillMaxSize()
+                    .pointerInput(items) {
+                        detectTapGestures { pos ->
+                            val hit = SceneLayoutEngine.hitTest(items, pos.x, pos.y, wPx, hPx, minRadius)
+                            if (hit != null) {
+                                hear(items.indexOf(hit))
+                            } else {
+                                sparkles += Sparkle(sparkleId++, pos)
+                                if (sparkles.size > 6) sparkles.removeAt(0)
+                                mascot.encourage()
+                            }
+                        }
                     },
             )
+
+            items.forEachIndexed { index, item ->
+                val sizeDp = (side * item.size).coerceAtLeast(Dimens.TouchTarget)
+                SceneItem(
+                    item = item,
+                    pulse = pulses[index],
+                    modifier = Modifier
+                        .offset {
+                            val px = sizeDp.toPx()
+                            IntOffset(
+                                (item.x * wPx - px / 2).coerceIn(0f, (wPx - px).coerceAtLeast(0f)).roundToInt(),
+                                (item.y * hPx - px / 2).coerceIn(0f, (hPx - px).coerceAtLeast(0f)).roundToInt(),
+                            )
+                        }
+                        .size(sizeDp)
+                        .semantics {
+                            contentDescription = item.word.text
+                            onClick(label = "Hear ${item.word.text}") {
+                                hear(index)
+                                true
+                            }
+                        },
+                )
+            }
+
+            sparkles.forEach { s -> key(s.id) { SparkleBurst(s.at) { sparkles.remove(s) } } }
+
+            label?.let { WordLabel(it, labelPulse, wPx, hPx, side) { label = null } }
+
+            // Way home and Pebble sit above the scene.
+            Box(Modifier.fillMaxSize().padding(Dimens.SpaceS)) {
+                HomeButton(onHome, Modifier.align(Alignment.TopStart))
+                Mascot(
+                    mascot,
+                    Modifier
+                        .align(Alignment.BottomStart)
+                        .size(84.dp)
+                        .bouncyClickable("Pebble") {
+                            content.phrase("tap_and_listen")?.let { audio.play(it.audio) }
+                            mascot.celebrate()
+                        },
+                )
+            }
         }
     }
 }
