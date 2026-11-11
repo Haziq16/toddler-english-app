@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pebble, the original mascot (see docs/MASCOT.md). Adaptive icon foreground, 108dp canvas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- leaf sprout -->
+    <path android:fillColor="#FF6FA83A" android:pathData="M53,38 L55,38 L55,31 L53,31 Z" />
+    <path android:fillColor="#FF8CC84B" android:pathData="M54,32 C54,25 60,21 67,22 C66,29 61,33 54,32 Z" />
+    <!-- feet -->
+    <path android:fillColor="#FFF4A259" android:pathData="M42,80 a6,3.5 0 1,0 12,0 a6,3.5 0 1,0 -12,0 Z" />
+    <path android:fillColor="#FFF4A259" android:pathData="M54,80 a6,3.5 0 1,0 12,0 a6,3.5 0 1,0 -12,0 Z" />
+    <!-- body -->
+    <path android:fillColor="#FF5FB49C" android:pathData="M32,58 a22,22 0 1,0 44,0 a22,22 0 1,0 -44,0 Z" />
+    <!-- belly -->
+    <path android:fillColor="#FFFFF4DC" android:pathData="M41,65 a13,11 0 1,0 26,0 a13,11 0 1,0 -26,0 Z" />
+    <!-- eyes -->
+    <path android:fillColor="#FF2E3A3F" android:pathData="M43,52 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0 Z" />
+    <path android:fillColor="#FF2E3A3F" android:pathData="M58.6,52 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0 Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M45.5,51 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0 Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M61.1,51 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0 Z" />
+    <!-- cheeks -->
+    <path android:fillColor="#FFF6B8B0" android:pathData="M38.5,59 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0 Z" />
+    <path android:fillColor="#FFF6B8B0" android:pathData="M64.3,59 a2.6,2.6 0 1,0 5.2,0 a2.6,2.6 0 1,0 -5.2,0 Z" />
+    <!-- beak -->
+    <path android:fillColor="#FFF4A259" android:pathData="M50.5,57 L57.5,57 L54,61.5 Z" />
+</vector>
