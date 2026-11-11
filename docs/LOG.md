@@ -12,3 +12,17 @@ Merged manifest has no INTERNET permission.
 **Decisions:** D-006 to D-011 added (proposed).
 **Open:** CI not yet observed on GitHub.
 **Next up:** start S1: write `app/src/main/assets/content/words.json` and the real `scripts/validate_content.py`.
+
+## 2026-11-12 10:30, Claude Code (Claude Opus 5.5), S1
+**Done:** content schema and Kotlin models/loader, 100 words in 5 scenes (tiers 1-3), 27 spoken phrases,
+scene index, design tokens (Palette, Dimens with 64dp TouchTarget, Motion, type scale), mascot Pebble
+(design sheet + Canvas drawing with moods), 100 word drawables + 5 scene backgrounds from `gen_art.py`,
+127 placeholder audio clips from `gen_audio.py`, real `validate_content.py`, art preview page.
+**Files:** assets/content/{words,phrases,scenes}.json, assets/audio/**, res/drawable/img_*.xml, bg_*.xml,
+content/Models.kt, content/ContentLoader.kt, ui/components/Pebble.kt, ui/theme/Tokens.kt, scripts/*,
+docs/CONTENT.md, docs/MASCOT.md, docs/CREDITS.md
+**State:** validator passes (lenient: usage rule is a warning until games and songs exist).
+`assembleDebug testDebugUnitTest lintDebug ktlintCheck` pass.
+**Decisions:** D-012 to D-016 (proposed). D-013 flags that the Windows voice may not be redistributable.
+**Open:** voice licence (D-013). Art checked by eye in the preview only, not yet on a device.
+**Next up:** start S2: write `audio/AudioService.kt` (SoundPool for words and phrases) and the navigation shell.

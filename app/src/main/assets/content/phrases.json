@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "phrases": [
+    {
+      "id": "hello",
+      "text": "Hello! I'm Pebble! Let's play!",
+      "audio": "audio/phrases/hello.ogg",
+      "translations": {}
+    },
+    {
+      "id": "scene_farm",
+      "text": "The farm!",
+      "audio": "audio/phrases/scene_farm.ogg",
+      "translations": {}
+    },
+    {
+      "id": "scene_food",
+      "text": "Yummy food!",
+      "audio": "audio/phrases/scene_food.ogg",
+      "translations": {}
+    },
+    {
+      "id": "scene_home",
+      "text": "At home!",
+      "audio": "audio/phrases/scene_home.ogg",
+      "translations": {}
+    },
+    {
+      "id": "scene_bedtime",
+      "text": "Bedtime!",
+      "audio": "audio/phrases/scene_bedtime.ogg",
+      "translations": {}
+    },
+    {
+      "id": "scene_outdoors",
+      "text": "Outside!",
+      "audio": "audio/phrases/scene_outdoors.ogg",
+      "translations": {}
+    },
+    {
+      "id": "tap_and_listen",
+      "text": "Tap and listen!",
+      "audio": "audio/phrases/tap_and_listen.ogg",
+      "translations": {}
+    },
+    {
+      "id": "praise_1",
+      "text": "Yay!",
+      "audio": "audio/phrases/praise_1.ogg",
+      "translations": {}
+    },
+    {
+      "id": "praise_2",
+      "text": "Well done!",
+      "audio": "audio/phrases/praise_2.ogg",
+      "translations": {}
+    },
+    {
+      "id": "praise_3",
+      "text": "Wonderful!",
+      "audio": "audio/phrases/praise_3.ogg",
+      "translations": {}
+    },
+    {
+      "id": "praise_4",
+      "text": "You did it!",
+      "audio": "audio/phrases/praise_4.ogg",
+      "translations": {}
+    },
+    {
+      "id": "praise_5",
+      "text": "Hooray!",
+      "audio": "audio/phrases/praise_5.ogg",
+      "translations": {}
+    },
+    {
+      "id": "encourage_1",
+      "text": "Let's look together!",
+      "audio": "audio/phrases/encourage_1.ogg",
+      "translations": {}
+    },
+    {
+      "id": "encourage_2",
+      "text": "Good looking! Let's find it.",
+      "audio": "audio/phrases/encourage_2.ogg",
+      "translations": {}
+    },
+    {
+      "id": "find_the",
+      "text": "Can you find the",
+      "audio": "audio/phrases/find_the.ogg",
+      "translations": {}
+    },
+    {
+      "id": "games",
+      "text": "Let's play a game!",
+      "audio": "audio/phrases/games.ogg",
+      "translations": {}
+    },
+    {
+      "id": "songs",
+      "text": "Let's sing a song!",
+      "audio": "audio/phrases/songs.ogg",
+      "translations": {}
+    },
+    {
+      "id": "stickers",
+      "text": "Look at your stickers!",
+      "audio": "audio/phrases/stickers.ogg",
+      "translations": {}
+    },
+    {
+      "id": "game_bubbles",
+      "text": "Pop the bubbles!",
+      "audio": "audio/phrases/game_bubbles.ogg",
+      "translations": {}
+    },
+    {
+      "id": "game_match",
+      "text": "Find the picture!",
+      "audio": "audio/phrases/game_match.ogg",
+      "translations": {}
+    },
+    {
+      "id": "game_sing",
+      "text": "Let's sing!",
+      "audio": "audio/phrases/game_sing.ogg",
+      "translations": {}
+    },
+    {
+      "id": "game_feed",
+      "text": "I'm hungry! Can you feed me?",
+      "audio": "audio/phrases/game_feed.ogg",
+      "translations": {}
+    },
+    {
+      "id": "feed_yum",
+      "text": "Yum yum! Thank you!",
+      "audio": "audio/phrases/feed_yum.ogg",
+      "translations": {}
+    },
+    {
+      "id": "feed_more",
+      "text": "More, please!",
+      "audio": "audio/phrases/feed_more.ogg",
+      "translations": {}
+    },
+    {
+      "id": "new_sticker",
+      "text": "A new sticker for you!",
+      "audio": "audio/phrases/new_sticker.ogg",
+      "translations": {}
+    },
+    {
+      "id": "rest",
+      "text": "Time for a little rest. Let's play again later!",
+      "audio": "audio/phrases/rest.ogg",
+      "translations": {}
+    },
+    {
+      "id": "grown_up",
+      "text": "This part is for grown-ups.",
+      "audio": "audio/phrases/grown_up.ogg",
+      "translations": {}
+    }
+  ]
+}

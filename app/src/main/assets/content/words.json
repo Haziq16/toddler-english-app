@@ -1,0 +1,1216 @@
+{
+  "schemaVersion": 1,
+  "words": [
+    {
+      "id": "ball",
+      "text": "ball",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/ball.ogg",
+      "image": "img_ball",
+      "tags": [
+        "toy"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cup",
+      "text": "cup",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/cup.ogg",
+      "image": "img_cup",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "door",
+      "text": "door",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/door.ogg",
+      "image": "img_door",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "chair",
+      "text": "chair",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/chair.ogg",
+      "image": "img_chair",
+      "tags": [
+        "furniture"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "book",
+      "text": "book",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/book.ogg",
+      "image": "img_book",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "shoe",
+      "text": "shoe",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/shoe.ogg",
+      "image": "img_shoe",
+      "tags": [
+        "clothes"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "hat",
+      "text": "hat",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/hat.ogg",
+      "image": "img_hat",
+      "tags": [
+        "clothes"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "sock",
+      "text": "sock",
+      "scene": "home",
+      "tier": 1,
+      "audio": "audio/words/sock.ogg",
+      "image": "img_sock",
+      "tags": [
+        "clothes"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "table",
+      "text": "table",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/table.ogg",
+      "image": "img_table",
+      "tags": [
+        "furniture"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "key",
+      "text": "key",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/key.ogg",
+      "image": "img_key",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "box",
+      "text": "box",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/box.ogg",
+      "image": "img_box",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "clock",
+      "text": "clock",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/clock.ogg",
+      "image": "img_clock",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "lamp",
+      "text": "lamp",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/lamp.ogg",
+      "image": "img_lamp",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bag",
+      "text": "bag",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/bag.ogg",
+      "image": "img_bag",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "phone",
+      "text": "phone",
+      "scene": "home",
+      "tier": 2,
+      "audio": "audio/words/phone.ogg",
+      "image": "img_phone",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "window",
+      "text": "window",
+      "scene": "home",
+      "tier": 3,
+      "audio": "audio/words/window.ogg",
+      "image": "img_window",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "sofa",
+      "text": "sofa",
+      "scene": "home",
+      "tier": 3,
+      "audio": "audio/words/sofa.ogg",
+      "image": "img_sofa",
+      "tags": [
+        "furniture"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "plant",
+      "text": "plant",
+      "scene": "home",
+      "tier": 3,
+      "audio": "audio/words/plant.ogg",
+      "image": "img_plant",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "mirror",
+      "text": "mirror",
+      "scene": "home",
+      "tier": 3,
+      "audio": "audio/words/mirror.ogg",
+      "image": "img_mirror",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "stairs",
+      "text": "stairs",
+      "scene": "home",
+      "tier": 3,
+      "audio": "audio/words/stairs.ogg",
+      "image": "img_stairs",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cow",
+      "text": "cow",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/cow.ogg",
+      "image": "img_cow",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "pig",
+      "text": "pig",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/pig.ogg",
+      "image": "img_pig",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "duck",
+      "text": "duck",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/duck.ogg",
+      "image": "img_duck",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "hen",
+      "text": "hen",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/hen.ogg",
+      "image": "img_hen",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "dog",
+      "text": "dog",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/dog.ogg",
+      "image": "img_dog",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cat",
+      "text": "cat",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/cat.ogg",
+      "image": "img_cat",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "egg",
+      "text": "egg",
+      "scene": "farm",
+      "tier": 1,
+      "audio": "audio/words/egg.ogg",
+      "image": "img_egg",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "horse",
+      "text": "horse",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/horse.ogg",
+      "image": "img_horse",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "sheep",
+      "text": "sheep",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/sheep.ogg",
+      "image": "img_sheep",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "goat",
+      "text": "goat",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/goat.ogg",
+      "image": "img_goat",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "chick",
+      "text": "chick",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/chick.ogg",
+      "image": "img_chick",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "lamb",
+      "text": "lamb",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/lamb.ogg",
+      "image": "img_lamb",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "mouse",
+      "text": "mouse",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/mouse.ogg",
+      "image": "img_mouse",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "barn",
+      "text": "barn",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/barn.ogg",
+      "image": "img_barn",
+      "tags": [
+        "place"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "gate",
+      "text": "gate",
+      "scene": "farm",
+      "tier": 2,
+      "audio": "audio/words/gate.ogg",
+      "image": "img_gate",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "rabbit",
+      "text": "rabbit",
+      "scene": "farm",
+      "tier": 3,
+      "audio": "audio/words/rabbit.ogg",
+      "image": "img_rabbit",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "donkey",
+      "text": "donkey",
+      "scene": "farm",
+      "tier": 3,
+      "audio": "audio/words/donkey.ogg",
+      "image": "img_donkey",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "tractor",
+      "text": "tractor",
+      "scene": "farm",
+      "tier": 3,
+      "audio": "audio/words/tractor.ogg",
+      "image": "img_tractor",
+      "tags": [
+        "vehicle"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "fence",
+      "text": "fence",
+      "scene": "farm",
+      "tier": 3,
+      "audio": "audio/words/fence.ogg",
+      "image": "img_fence",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "hay",
+      "text": "hay",
+      "scene": "farm",
+      "tier": 3,
+      "audio": "audio/words/hay.ogg",
+      "image": "img_hay",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "apple",
+      "text": "apple",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/apple.ogg",
+      "image": "img_apple",
+      "tags": [
+        "food",
+        "fruit"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "banana",
+      "text": "banana",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/banana.ogg",
+      "image": "img_banana",
+      "tags": [
+        "food",
+        "fruit"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "milk",
+      "text": "milk",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/milk.ogg",
+      "image": "img_milk",
+      "tags": [
+        "food",
+        "drink"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cake",
+      "text": "cake",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/cake.ogg",
+      "image": "img_cake",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "water",
+      "text": "water",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/water.ogg",
+      "image": "img_water",
+      "tags": [
+        "food",
+        "drink"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bread",
+      "text": "bread",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/bread.ogg",
+      "image": "img_bread",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "juice",
+      "text": "juice",
+      "scene": "food",
+      "tier": 1,
+      "audio": "audio/words/juice.ogg",
+      "image": "img_juice",
+      "tags": [
+        "food",
+        "drink"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "rice",
+      "text": "rice",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/rice.ogg",
+      "image": "img_rice",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cheese",
+      "text": "cheese",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/cheese.ogg",
+      "image": "img_cheese",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "grape",
+      "text": "grape",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/grape.ogg",
+      "image": "img_grape",
+      "tags": [
+        "food",
+        "fruit"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "pear",
+      "text": "pear",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/pear.ogg",
+      "image": "img_pear",
+      "tags": [
+        "food",
+        "fruit"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "carrot",
+      "text": "carrot",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/carrot.ogg",
+      "image": "img_carrot",
+      "tags": [
+        "food",
+        "vegetable"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "soup",
+      "text": "soup",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/soup.ogg",
+      "image": "img_soup",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cookie",
+      "text": "cookie",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/cookie.ogg",
+      "image": "img_cookie",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "corn",
+      "text": "corn",
+      "scene": "food",
+      "tier": 2,
+      "audio": "audio/words/corn.ogg",
+      "image": "img_corn",
+      "tags": [
+        "food",
+        "vegetable"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "orange",
+      "text": "orange",
+      "scene": "food",
+      "tier": 3,
+      "audio": "audio/words/orange.ogg",
+      "image": "img_orange",
+      "tags": [
+        "food",
+        "fruit"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "pizza",
+      "text": "pizza",
+      "scene": "food",
+      "tier": 3,
+      "audio": "audio/words/pizza.ogg",
+      "image": "img_pizza",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "yogurt",
+      "text": "yogurt",
+      "scene": "food",
+      "tier": 3,
+      "audio": "audio/words/yogurt.ogg",
+      "image": "img_yogurt",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "peas",
+      "text": "peas",
+      "scene": "food",
+      "tier": 3,
+      "audio": "audio/words/peas.ogg",
+      "image": "img_peas",
+      "tags": [
+        "food",
+        "vegetable"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "honey",
+      "text": "honey",
+      "scene": "food",
+      "tier": 3,
+      "audio": "audio/words/honey.ogg",
+      "image": "img_honey",
+      "tags": [
+        "food"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bed",
+      "text": "bed",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/bed.ogg",
+      "image": "img_bed",
+      "tags": [
+        "furniture"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "moon",
+      "text": "moon",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/moon.ogg",
+      "image": "img_moon",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "star",
+      "text": "star",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/star.ogg",
+      "image": "img_star",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bath",
+      "text": "bath",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/bath.ogg",
+      "image": "img_bath",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "teddy",
+      "text": "teddy bear",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/teddy.ogg",
+      "image": "img_teddy",
+      "tags": [
+        "toy"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "hug",
+      "text": "hug",
+      "scene": "bedtime",
+      "tier": 1,
+      "audio": "audio/words/hug.ogg",
+      "image": "img_hug",
+      "tags": [
+        "action"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "pillow",
+      "text": "pillow",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/pillow.ogg",
+      "image": "img_pillow",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "blanket",
+      "text": "blanket",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/blanket.ogg",
+      "image": "img_blanket",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "soap",
+      "text": "soap",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/soap.ogg",
+      "image": "img_soap",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "towel",
+      "text": "towel",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/towel.ogg",
+      "image": "img_towel",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "owl",
+      "text": "owl",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/owl.ogg",
+      "image": "img_owl",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "night",
+      "text": "night",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/night.ogg",
+      "image": "img_night",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "sleep",
+      "text": "sleep",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/sleep.ogg",
+      "image": "img_sleep",
+      "tags": [
+        "action"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "slippers",
+      "text": "slippers",
+      "scene": "bedtime",
+      "tier": 2,
+      "audio": "audio/words/slippers.ogg",
+      "image": "img_slippers",
+      "tags": [
+        "clothes"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "toothbrush",
+      "text": "toothbrush",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/toothbrush.ogg",
+      "image": "img_toothbrush",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "pajamas",
+      "text": "pajamas",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/pajamas.ogg",
+      "image": "img_pajamas",
+      "tags": [
+        "clothes"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bubbles",
+      "text": "bubbles",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/bubbles.ogg",
+      "image": "img_bubbles",
+      "tags": [
+        "object"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "yawn",
+      "text": "yawn",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/yawn.ogg",
+      "image": "img_yawn",
+      "tags": [
+        "action"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "dream",
+      "text": "dream",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/dream.ogg",
+      "image": "img_dream",
+      "tags": [
+        "action"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "quiet",
+      "text": "quiet",
+      "scene": "bedtime",
+      "tier": 3,
+      "audio": "audio/words/quiet.ogg",
+      "image": "img_quiet",
+      "tags": [
+        "feeling"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "sun",
+      "text": "sun",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/sun.ogg",
+      "image": "img_sun",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "tree",
+      "text": "tree",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/tree.ogg",
+      "image": "img_tree",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "car",
+      "text": "car",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/car.ogg",
+      "image": "img_car",
+      "tags": [
+        "vehicle"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bus",
+      "text": "bus",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/bus.ogg",
+      "image": "img_bus",
+      "tags": [
+        "vehicle"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bird",
+      "text": "bird",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/bird.ogg",
+      "image": "img_bird",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "fish",
+      "text": "fish",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/fish.ogg",
+      "image": "img_fish",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "rain",
+      "text": "rain",
+      "scene": "outdoors",
+      "tier": 1,
+      "audio": "audio/words/rain.ogg",
+      "image": "img_rain",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "flower",
+      "text": "flower",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/flower.ogg",
+      "image": "img_flower",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bee",
+      "text": "bee",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/bee.ogg",
+      "image": "img_bee",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "frog",
+      "text": "frog",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/frog.ogg",
+      "image": "img_frog",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "kite",
+      "text": "kite",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/kite.ogg",
+      "image": "img_kite",
+      "tags": [
+        "toy"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "boat",
+      "text": "boat",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/boat.ogg",
+      "image": "img_boat",
+      "tags": [
+        "vehicle"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "cloud",
+      "text": "cloud",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/cloud.ogg",
+      "image": "img_cloud",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "leaf",
+      "text": "leaf",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/leaf.ogg",
+      "image": "img_leaf",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "bike",
+      "text": "bike",
+      "scene": "outdoors",
+      "tier": 2,
+      "audio": "audio/words/bike.ogg",
+      "image": "img_bike",
+      "tags": [
+        "vehicle"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "snail",
+      "text": "snail",
+      "scene": "outdoors",
+      "tier": 3,
+      "audio": "audio/words/snail.ogg",
+      "image": "img_snail",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "butterfly",
+      "text": "butterfly",
+      "scene": "outdoors",
+      "tier": 3,
+      "audio": "audio/words/butterfly.ogg",
+      "image": "img_butterfly",
+      "tags": [
+        "animal"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "swing",
+      "text": "swing",
+      "scene": "outdoors",
+      "tier": 3,
+      "audio": "audio/words/swing.ogg",
+      "image": "img_swing",
+      "tags": [
+        "toy"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "puddle",
+      "text": "puddle",
+      "scene": "outdoors",
+      "tier": 3,
+      "audio": "audio/words/puddle.ogg",
+      "image": "img_puddle",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    },
+    {
+      "id": "rainbow",
+      "text": "rainbow",
+      "scene": "outdoors",
+      "tier": 3,
+      "audio": "audio/words/rainbow.ogg",
+      "image": "img_rainbow",
+      "tags": [
+        "nature"
+      ],
+      "translations": {}
+    }
+  ]
+}

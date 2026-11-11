@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "scenes": [
+    {
+      "id": "farm",
+      "title": "Farm",
+      "tint": "farm",
+      "icon": "cow",
+      "background": "bg_farm",
+      "phrase": "scene_farm",
+      "layout": "scenes/farm.json"
+    },
+    {
+      "id": "food",
+      "title": "Food",
+      "tint": "food",
+      "icon": "apple",
+      "background": "bg_food",
+      "phrase": "scene_food",
+      "layout": "scenes/food.json"
+    },
+    {
+      "id": "home",
+      "title": "Home",
+      "tint": "home",
+      "icon": "ball",
+      "background": "bg_home",
+      "phrase": "scene_home",
+      "layout": "scenes/home.json"
+    },
+    {
+      "id": "bedtime",
+      "title": "Bedtime",
+      "tint": "bedtime",
+      "icon": "moon",
+      "background": "bg_bedtime",
+      "phrase": "scene_bedtime",
+      "layout": "scenes/bedtime.json"
+    },
+    {
+      "id": "outdoors",
+      "title": "Outdoors",
+      "tint": "outdoors",
+      "icon": "sun",
+      "background": "bg_outdoors",
+      "phrase": "scene_outdoors",
+      "layout": "scenes/outdoors.json"
+    }
+  ]
+}
