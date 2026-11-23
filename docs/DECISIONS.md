@@ -149,3 +149,6 @@ email are placeholders until the owner fills them in.
 Play App Signing with a separate upload key kept outside the repository; `keystore.properties` (git-ignored)
 points the release build at it. Releases go internal testing, then a closed test (12+ testers for 14 days,
 required for a new personal developer account), then a staged production rollout. Details in docs/RELEASE.md.
+
+## D-029 Repository presentation (proposed)
+Use the checked-in app name Toddler English in the repository landing page, keeping it distinct from the separate TinyTalk/MIM project. Add an original SVG banner and link to the existing content, architecture, privacy and release documents. The README describes bundled-audio learning and DataStore, not speech recognition or Room. This is documentation only and does not resolve the outstanding owner-only release work.

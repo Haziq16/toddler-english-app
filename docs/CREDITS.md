@@ -10,3 +10,4 @@ Every font, sound and image in the app, with its source and licence.
 | Song lyrics | `content/songs.json` (7 songs) | Original chants written for this project; no traditional or published lyrics used | Project's own |
 | Song melodies | `assets/audio/songs/*` | Simple tones generated in `scripts/gen_audio.py` | Project's own |
 | Font | system sans-serif | Device font, not bundled | n/a |
+| Repository banner | `docs/assets/repository-banner.svg` | Original SVG drawn for the repository presentation; not bundled in the Android app | Project's own |

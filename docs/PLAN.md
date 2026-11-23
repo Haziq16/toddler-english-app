@@ -13,7 +13,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S6 Remaining scenes and songs | done |
 | S7 Polish and compliance | done |
 | S8 Release prep | done |
-| S9 Repository presentation | in-progress |
+| S9 Repository presentation | done |
 
 ## S0 Foundations
 - **Goal:** a buildable, testable, linted project with CI and handoff files.

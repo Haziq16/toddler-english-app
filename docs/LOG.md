@@ -127,3 +127,11 @@ capture store screenshots and export the 512 px icon and feature graphic. CI: S0
 GitHub; the S2-S6 runs sat in GitHub's queue and were cancelled as superseded.
 **Next up:** owner: create the upload key with the keytool command in docs/RELEASE.md section 1, then run
 `./gradlew bundleRelease` and upload the AAB to an internal testing track.
+
+## 2026-11-23 15:15, Codex, S9
+**Done:** repository landing page with original SVG banner, verified feature overview, build commands and links to existing engineering/release docs. Kept Toddler English distinct from TinyTalk/MIM.
+**Files:** README.md, docs/assets/repository-banner.svg, docs/{PLAN,DECISIONS,CREDITS,LOG}.md.
+**State:** documentation references checked against the committed tree; all eight repository banners parse as XML and local Markdown links resolve. No application code, assets or build configuration changed. Local Android build/device tests were not run: this session edits repository contents through GitHub without an Android checkout/toolchain. The existing CI workflow will run on push; its result must be checked separately.
+**Decisions:** D-029 (proposed).
+**Open:** owner-only S8 release items remain; no new build, device, voice-licence or store-readiness claims.
+**Next up:** owner: resolve the existing S8 release prerequisites in docs/RELEASE.md. For engineering work, review the latest CI result before changing application code.
