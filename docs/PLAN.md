@@ -13,6 +13,7 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 | S6 Remaining scenes and songs | done |
 | S7 Polish and compliance | done |
 | S8 Release prep | done |
+| S9 Repository presentation | in-progress |
 
 ## S0 Foundations
 - **Goal:** a buildable, testable, linted project with CI and handoff files.
@@ -66,3 +67,9 @@ Status values: `todo`, `in-progress`, `done`, `blocked`.
 - Respect the system "remove animations" setting with a calmer motion mode.
 - Landscape-specific scene layouts (items sit close together in landscape on phones).
 - A repeatable screenshot script for the store listing (demo mode + tier presets).
+
+## S9 Repository presentation
+- **Goal:** make the existing app understandable from its repository landing page.
+- **Deliverables:** project README, original repository banner, links to setup, architecture, content and release documentation.
+- **Done when:** documentation references match the checked-in app and all local links and SVG files validate.
+- **Scope:** documentation only; the owner-only release steps from S8 remain pending.
